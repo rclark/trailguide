@@ -9,11 +9,6 @@ class Route(models.Model):
     geo = models.GeometryCollectionField()
     objects = models.GeoManager()
     
-    segments = models.ManyToManyField('Segment')
-    
-    name = models.CharField(max_length=255)
-    test = models.TextField()
-    
 class RouteAdmin(admin.ModelAdmin):
     pass
 
