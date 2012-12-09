@@ -6,6 +6,7 @@ class Region(models.Model):
     class Meta:
         app_label = 'trailguide'
         
+    # Geospatial components of the model
     geo = models.MultiPolygonField()
     objects = models.GeoManager()
     

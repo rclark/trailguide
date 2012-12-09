@@ -5,7 +5,8 @@ class Trailhead(models.Model):
     """Point features representing trailheads"""
     class Meta:
         app_label = 'trailguide'
-        
+    
+    # Geospatial components of the model 
     geo = models.PointField()
     objects = models.GeoManager()
     

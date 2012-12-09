@@ -6,6 +6,7 @@ class Description(models.Model):
     class Meta:
         app_label = 'trailguide'
         
+    # Geospatial components of the model
     objects = models.GeoManager()
     
 class DescriptionAdmin(admin.ModelAdmin):
