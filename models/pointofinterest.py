@@ -5,7 +5,7 @@ class PointOfInterest(models.Model):
     """Point features representing interesting places"""
     class Meta:
         app_label = 'trailguide'
-        
+    
     # Geospatial components of the model
     geo = models.PointField()
     objects = models.GeoManager()
