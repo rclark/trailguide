@@ -1,5 +1,5 @@
 from django.contrib.gis.db import models
-from django.contrib import admin
+from django.contrib.gis import admin
 
 class PointOfInterest(models.Model):
     """Point features representing interesting places"""
@@ -10,7 +10,7 @@ class PointOfInterest(models.Model):
     geo = models.PointField()
     objects = models.GeoManager()
     
-class PointOfInterestAdmin(admin.ModelAdmin):
+class PointOfInterestAdmin(admin.OSMGeoAdmin):
     pass
 
 admin.site.register(PointOfInterest, PointOfInterestAdmin)

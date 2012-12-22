@@ -1,5 +1,5 @@
 from django.contrib.gis.db import models
-from django.contrib import admin
+from django.contrib.gis import admin
 
 class Route(models.Model):
     """A collection of segments that represents a 'trail' or a  'hike'"""
@@ -10,7 +10,7 @@ class Route(models.Model):
     geo = models.GeometryCollectionField()
     objects = models.GeoManager()
     
-class RouteAdmin(admin.ModelAdmin):
+class RouteAdmin(admin.OSMGeoAdmin):
     pass
 
 admin.site.register(Route, RouteAdmin)

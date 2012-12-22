@@ -1,5 +1,5 @@
 from django.contrib.gis.db import models
-from django.contrib import admin
+from django.contrib.gis import admin
 
 class Trailhead(models.Model):
     """Point features representing trailheads"""
@@ -10,7 +10,7 @@ class Trailhead(models.Model):
     geo = models.PointField()
     objects = models.GeoManager()
     
-class TrailheadAdmin(admin.ModelAdmin):
+class TrailheadAdmin(admin.OSMGeoAdmin):
     pass
 
 admin.site.register(Trailhead, TrailheadAdmin)

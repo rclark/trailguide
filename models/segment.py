@@ -1,5 +1,5 @@
 from django.contrib.gis.db import models
-from django.contrib import admin
+from django.contrib.gis import admin
 
 class Segment(models.Model):
     """Line features representing a trail segment"""
@@ -10,7 +10,7 @@ class Segment(models.Model):
     geo = models.LineStringField()
     objects = models.GeoManager()
     
-class SegmentAdmin(admin.ModelAdmin):
+class SegmentAdmin(admin.OSMGeoAdmin):
     pass
 
 admin.site.register(Segment, SegmentAdmin)
