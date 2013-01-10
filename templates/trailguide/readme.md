@@ -1,0 +1,1 @@
+Here is the place to put Django templates that render various pages on the site.
