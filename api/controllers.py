@@ -6,7 +6,7 @@ from django.core.serializers.base import DeserializationError
 import json
 
 # -------------------------------------------------------------------
-#    Functions to respond to urls
+#    Functions that respond to urls - we'll revisit csrf later
 # -------------------------------------------------------------------
 @csrf_exempt
 def single(request, model_name, pk):
@@ -78,7 +78,7 @@ class BaseController(object):
             query_params[key] = self.request.GET[key]
         return self.model.objects.filter(**query_params)
         
-    def _view_models(self):
+    def view_models(self):
         """Serialize the filtered set of models and return them as an HttpResponse"""
         json_string = self._serialize(self.models)
         return HttpResponse(json_string, content_type="application/json")
@@ -99,11 +99,17 @@ class BaseController(object):
         new_model.save()
         return new_model
     
-    def _new_model(self):
+    def new_model(self):
         """Generate a new instance of the model and return an HttpResponse with the URL for it"""
         model = self._create_new_model()
         response = HttpResponse()
         response["Location"] = "/api/%s/%s/" % ( self.model_name, model.pk )
+        return response
+    
+    def del_model(self):
+        """Destroy an existing instance of the model and return the proper HTTP response"""
+        self.model.delete()
+        response = HttpResponse(status=204)
         return response
     
 class CollectionController(BaseController):
@@ -120,9 +126,9 @@ class CollectionController(BaseController):
         
         # Dispatch the request
         if request.method == "GET":
-            self.http_response = self._view_models() 
+            self.http_response = self.view_models() 
         elif request.method == "POST":
-            self.http_response = self._new_model()
+            self.http_response = self.new_model()
     
 class SingleController(BaseController):
     """A controller for API requests to a single instance of models"""
@@ -134,7 +140,7 @@ class SingleController(BaseController):
             return
         
         if request.method == "GET":
-            self.http_response = self._view_models() 
+            self.http_response = self.view_models() 
         elif request.method == "PUT":
             self.http_response = self.new_model()
         elif request.method == "DELETE":
