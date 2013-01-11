@@ -5,13 +5,13 @@ jade = require 'jade'
 argv = require('optimist')
   .boolean(['R','s']) # Use -R flag to create RequireJS files, use -s flag to indicate if all functions should be written to a single file
   .default(
-    J: '../../static/scripts/lib/jade-runtime-0.27.7',     # use -J flag to indicate the location of Jade's runtime.js
+    J: '/static/scripts/lib/jade-runtime-0.27.7',     # use -J flag to indicate the URL of Jade's runtime.js
     w: '../../static/templates'                 # use -w flag to indicate the watch directory of Jade files
     o: '../../static/scripts/templates'         # use -o flag to indicate the output location for JavaScript files    
   )
   .argv
   
-jadePath = path.resolve argv.J
+jadePath = argv.J.replace ".js", ""
 watchDir = argv.w
 outDir = argv.o
 useRequire = argv.R
