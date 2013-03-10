@@ -1,0 +1,44 @@
+{% extends "trailguide/base.html" %}
+
+{% block scripts %}
+script(src="/static/vendor/jquery-1.9.1.js")
+script(src="/static/vendor/bootstrap/js/bootstrap-transition.js")
+script(src="/static/vendor/bootstrap/js/bootstrap-carousel.js")
+{% endblock %}
+
+{% block content %}
+#home-carousel.carousel.slide
+    .carousel-inner.row-fluid
+        .item.active 
+            img(src="/static/img/bootstrap-mdo-sfmoma-01.jpg")
+            .carousel-caption.span4.offset7
+                h1 Blaze a trail.
+                p.lead Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                a.btn.btn-large.btn-primary(href="#") Sign up &rsaquo;&rsaquo;
+        .item
+            img(src="/static/img/bootstrap-mdo-sfmoma-02.jpg")
+            .carousel-caption.span4.offset7
+                h1 Find your stride.
+                p.lead Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                a.btn.btn-large.btn-primary(href="#") Explore &rsaquo;&rsaquo;
+        .item
+            img(src="/static/img/bootstrap-mdo-sfmoma-03.jpg")
+            .carousel-caption.span4.offset7
+                h1 Show your friends.
+                p.lead Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                a.btn.btn-large.btn-primary(href="#") Share &rsaquo;&rsaquo;
+    a.carousel-control.left(href="#home-carousel", data-slide="prev") &lsaquo;
+    a.carousel-control.right(href="#home-carousel", data-slide="next") &rsaquo;
+.container
+    .featurette
+        img(src="/static/img/browser-icon-chrome.png").featurette-image.pull-right
+        h2.featurette-heading Explore the Mountains. 
+            span.muted From Happy Valley to Wasson Peak, Mount Lemmon included.
+        p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+    hr.featurette-divider
+    .featurette
+        img(src="/static/img/browser-icon-chrome.png").featurette-image.pull-left
+        h2.featurette-heading Lead the way. 
+            span.muted Show off your favorite trails and places.
+        p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.    
+{% endblock %}

@@ -1,0 +1,40 @@
+
+{% extends "trailguide/base.html" %}
+{% block scripts %}
+<script src="/static/vendor/jquery-1.9.1.js"></script>
+<script src="/static/vendor/bootstrap/js/bootstrap-transition.js"></script>
+<script src="/static/vendor/bootstrap/js/bootstrap-carousel.js"></script>{% endblock %}
+{% block content %}
+<div id="home-carousel" class="carousel slide">
+  <div class="carousel-inner row-fluid">
+    <div class="item active"> <img src="/static/img/bootstrap-mdo-sfmoma-01.jpg"/>
+      <div class="carousel-caption span4 offset7">
+        <h1>Blaze a trail.</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p><a href="#" class="btn btn-large btn-primary">Sign up &rsaquo;&rsaquo;</a>
+      </div>
+    </div>
+    <div class="item"><img src="/static/img/bootstrap-mdo-sfmoma-02.jpg"/>
+      <div class="carousel-caption span4 offset7">
+        <h1>Find your stride.</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p><a href="#" class="btn btn-large btn-primary">Explore &rsaquo;&rsaquo;</a>
+      </div>
+    </div>
+    <div class="item"><img src="/static/img/bootstrap-mdo-sfmoma-03.jpg"/>
+      <div class="carousel-caption span4 offset7">
+        <h1>Show your friends.</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p><a href="#" class="btn btn-large btn-primary">Share &rsaquo;&rsaquo;</a>
+      </div>
+    </div>
+  </div><a href="#home-carousel" data-slide="prev" class="carousel-control left">&lsaquo;</a><a href="#home-carousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
+</div>
+<div class="container">
+  <div class="featurette"><img src="/static/img/browser-icon-chrome.png" class="featurette-image pull-right"/>
+    <h2 class="featurette-heading">Explore the Mountains. <span class="muted">From Happy Valley to Wasson Peak, Mount Lemmon included.</span></h2>
+    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+  </div>
+  <hr class="featurette-divider"/>
+  <div class="featurette"><img src="/static/img/browser-icon-chrome.png" class="featurette-image pull-left"/>
+    <h2 class="featurette-heading">Lead the way. <span class="muted">Show off your favorite trails and places.</span></h2>
+    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.    </p>
+  </div>
+</div>{% endblock %}

@@ -1,0 +1,31 @@
+!!!html
+html
+    head
+        title {{ site_title }}
+        link(rel="stylesheet", type="text/css", href="/static/styles/css/style.css")
+        {% block scripts %}        
+        {% endblock %}
+    body
+        .navbar.navbar-static-top
+            .navbar-inner
+                button(type="button", data-toggle="collapse", data-target=".nav-collapse").btn.btn-navbar
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.brand(href="#") {{ site_title }}
+                .nav-collapse.collapse
+                    ul.nav
+                        li: a(href="#") Explore
+                        li: a(href="#") My Dashboard
+                    button(type="submit").btn.pull-right Sign In
+                    form#search-bar.navbar-form.form-search.pull-right
+                        .input-append
+                            input(type="search", placeholder="Find a Trail").search-query
+                            button(type="submit").btn Search
+        {% block content %}
+        {% endblock %}
+        .container
+            footer
+                hr
+                p.pull-right: a(href="#") Back to top
+                p Copyright 2013 Clark Canyons, Inc.
