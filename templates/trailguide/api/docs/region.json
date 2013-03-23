@@ -1,0 +1,104 @@
+{
+    "apiVersion": "1.0",
+    "swaggerVersion": "1.1",
+    "basePath": "{{ host }}",
+    "resourcePath": "/region/",
+    "apis": [
+        {
+            "path": "/region/",
+            "description": "Operations on the set of regions",
+            "operations": [
+                {
+                    "httpMethod": "GET",
+                    "nickname": "listRegions",
+                    "responseClass": "Region",
+                    "summary": "List existing regions",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json", "text/html" ],
+                    "parameters": []
+                }, {
+                    "httpMethod": "POST",
+                    "nickname": "newRegion",
+                    "responseClass": "Region",
+                    "summary": "Create a new region",
+                    "notes": "",
+                    "errorResponses": [],
+                    "consumes": [ "application/json" ],
+                    "produces": [ "application/json" ],
+                    "parameters": []
+                }
+            ]
+        }, {
+            "path": "/region/{regionId}/",
+            "description": "Operations on an individual region",
+            "operations": [
+                {
+                    "httpMethod": "GET",
+                    "nickname": "getRegion",
+                    "responseClass": "Region",
+                    "summary": "Get a single region",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json", "text/html" ],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "regionId",
+                            "description": "The primary key of an existing region",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }, {
+                    "httpMethod": "PUT",
+                    "nickname": "updateRegion",
+                    "responseClass": "Region",
+                    "summary": "Update an existing region",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json" ],
+                    "consumes": [ "application/json" ],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "regionId",
+                            "description": "The primary key of an existing region",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }, {
+                    "httpMethod": "DELETE",
+                    "nickname": "deleteRegion",
+                    "responseClass": null,
+                    "summary": "Delete an existing region",
+                    "notes": "",
+                    "errorResponses": [],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "regionId",
+                            "description": "The primary key of an existing region",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ],
+    "models": {
+        "Region": {
+            "id": "Region",
+            "description": "A region",
+            "properties": {
+
+            }
+        }
+    }
+}

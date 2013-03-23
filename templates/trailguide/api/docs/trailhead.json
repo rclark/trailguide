@@ -1,0 +1,104 @@
+{
+    "apiVersion": "1.0",
+    "swaggerVersion": "1.1",
+    "basePath": "{{ host }}",
+    "resourcePath": "/trailhead/",
+    "apis": [
+        {
+            "path": "/trailhead/",
+            "description": "Operations on the set of trailheads",
+            "operations": [
+                {
+                    "httpMethod": "GET",
+                    "nickname": "listTrailheads",
+                    "responseClass": "Trailhead",
+                    "summary": "List existing trailheads",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json", "text/html" ],
+                    "parameters": []
+                }, {
+                    "httpMethod": "POST",
+                    "nickname": "newTrailhead",
+                    "responseClass": "Trailhead",
+                    "summary": "Create a new trailhead",
+                    "notes": "",
+                    "errorResponses": [],
+                    "consumes": [ "application/json" ],
+                    "produces": [ "application/json" ],
+                    "parameters": []
+                }
+            ]
+        }, {
+            "path": "/trailhead/{trailheadId}/",
+            "description": "Operations on an individual trailhead",
+            "operations": [
+                {
+                    "httpMethod": "GET",
+                    "nickname": "getTrailhead",
+                    "responseClass": "Trailhead",
+                    "summary": "Get a single trailhead",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json", "text/html" ],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "trailheadId",
+                            "description": "The primary key of an existing trailhead",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }, {
+                    "httpMethod": "PUT",
+                    "nickname": "updateTrailhead",
+                    "responseClass": "Trailhead",
+                    "summary": "Update an existing trailhead",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json" ],
+                    "consumes": [ "application/json" ],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "trailheadId",
+                            "description": "The primary key of an existing trailhead",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }, {
+                    "httpMethod": "DELETE",
+                    "nickname": "deleteTrailhead",
+                    "responseClass": null,
+                    "summary": "Delete an existing trailhead",
+                    "notes": "",
+                    "errorResponses": [],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "trailheadId",
+                            "description": "The primary key of an existing trailhead",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ],
+    "models": {
+        "Trailhead": {
+            "id": "Trailhead",
+            "description": "A trailhead",
+            "properties": {
+
+            }
+        }
+    }
+}

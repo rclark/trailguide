@@ -1,0 +1,104 @@
+{
+    "apiVersion": "1.0",
+    "swaggerVersion": "1.1",
+    "basePath": "{{ host }}",
+    "resourcePath": "/pointofinterest/",
+    "apis": [
+        {
+            "path": "/pointofinterest/",
+            "description": "Operations on the set of pointOfInterests",
+            "operations": [
+                {
+                    "httpMethod": "GET",
+                    "nickname": "listPointOfInterests",
+                    "responseClass": "PointOfInterest",
+                    "summary": "List existing pointOfInterests",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json", "text/html" ],
+                    "parameters": []
+                }, {
+                    "httpMethod": "POST",
+                    "nickname": "newPointOfInterest",
+                    "responseClass": "PointOfInterest",
+                    "summary": "Create a new pointOfInterest",
+                    "notes": "",
+                    "errorResponses": [],
+                    "consumes": [ "application/json" ],
+                    "produces": [ "application/json" ],
+                    "parameters": []
+                }
+            ]
+        }, {
+            "path": "/pointofinterest/{pointOfInterestId}/",
+            "description": "Operations on an individual pointOfInterest",
+            "operations": [
+                {
+                    "httpMethod": "GET",
+                    "nickname": "getPointOfInterest",
+                    "responseClass": "PointOfInterest",
+                    "summary": "Get a single pointOfInterest",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json", "text/html" ],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "pointOfInterestId",
+                            "description": "The primary key of an existing pointOfInterest",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }, {
+                    "httpMethod": "PUT",
+                    "nickname": "updatePointOfInterest",
+                    "responseClass": "PointOfInterest",
+                    "summary": "Update an existing pointOfInterest",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json" ],
+                    "consumes": [ "application/json" ],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "pointOfInterestId",
+                            "description": "The primary key of an existing pointOfInterest",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }, {
+                    "httpMethod": "DELETE",
+                    "nickname": "deletePointOfInterest",
+                    "responseClass": null,
+                    "summary": "Delete an existing pointOfInterest",
+                    "notes": "",
+                    "errorResponses": [],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "pointOfInterestId",
+                            "description": "The primary key of an existing pointOfInterest",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ],
+    "models": {
+        "PointOfInterest": {
+            "id": "PointOfInterest",
+            "description": "A pointOfInterest",
+            "properties": {
+
+            }
+        }
+    }
+}

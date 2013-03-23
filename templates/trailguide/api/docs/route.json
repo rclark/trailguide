@@ -1,0 +1,104 @@
+{
+    "apiVersion": "1.0",
+    "swaggerVersion": "1.1",
+    "basePath": "{{ host }}",
+    "resourcePath": "/route/",
+    "apis": [
+        {
+            "path": "/route/",
+            "description": "Operations on the set of trail routes",
+            "operations": [
+                {
+                    "httpMethod": "GET",
+                    "nickname": "listRoutes",
+                    "responseClass": "Route",
+                    "summary": "List existing trail routes",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json", "text/html" ],
+                    "parameters": []
+                }, {
+                    "httpMethod": "POST",
+                    "nickname": "newRoute",
+                    "responseClass": "Route",
+                    "summary": "Create a new trail route",
+                    "notes": "",
+                    "errorResponses": [],
+                    "consumes": [ "application/json" ],
+                    "produces": [ "application/json" ],
+                    "parameters": []
+                }
+            ]
+        }, {
+            "path": "/route/{routeId}/",
+            "description": "Operations on an individual trail route",
+            "operations": [
+                {
+                    "httpMethod": "GET",
+                    "nickname": "getRoute",
+                    "responseClass": "Route",
+                    "summary": "Get a single trail route",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json", "text/html" ],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "routeId",
+                            "description": "The primary key of an existing trail route",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }, {
+                    "httpMethod": "PUT",
+                    "nickname": "updateRoute",
+                    "responseClass": "Route",
+                    "summary": "Update an existing trail route",
+                    "notes": "",
+                    "errorResponses": [],
+                    "produces": [ "application/json" ],
+                    "consumes": [ "application/json" ],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "routeId",
+                            "description": "The primary key of an existing trail route",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }, {
+                    "httpMethod": "DELETE",
+                    "nickname": "deleteRoute",
+                    "responseClass": null,
+                    "summary": "Delete an existing trail route",
+                    "notes": "",
+                    "errorResponses": [],
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "routeId",
+                            "description": "The primary key of an existing trail route",
+                            "dataType": "String",
+                            "required": true,
+                            "allowMultiple": false
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ],
+    "models": {
+        "Route": {
+            "id": "Route",
+            "description": "A trail route",
+            "properties": {
+
+            }
+        }
+    }
+}
