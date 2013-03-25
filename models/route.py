@@ -57,8 +57,12 @@ class Route(models.Model):
         return result
     
     def notes(self):
-        """"""
-        pass
+        """Return a list of the route's notes by aggregating the
+        notes from all constituent segments."""
+        result = []
+        for segment in self.segments:
+            result.append([ note for note in segment.notes ])
+        return result
 
 
 class SegmentPosition(models.Model):
