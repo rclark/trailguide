@@ -2,12 +2,7 @@ from django.contrib.gis.db import models
 from django.contrib.gis import admin
 from django.contrib.gis import gdal, geos
 from django.contrib.gis.measure import Distance
-from trailguide.models import PointOfInterest
-
-trail_conditions = (
-    (1, "Easy"),
-    (2, "Fucking Terrible")
-)
+from trailguide.models import PointOfInterest, trail_conditions, difficulties
 
 class Segment(models.Model):
     """Line features representing a trail segment"""
@@ -29,7 +24,7 @@ class Segment(models.Model):
     def geom_in_spherical_mercator(self):
         """Return the geometry of the object in spherical mercator projection"""
         transformed = self.geo.ogr.transform(gdal.SpatialReference(900913), clone=True)
-        return geos.GEOSGeometry(transformed.wkt, 900913    )
+        return geos.GEOSGeometry(transformed.wkt, 900913)
 
     def length(self):
         """Calculate the length of the line segment"""

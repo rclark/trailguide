@@ -24,6 +24,17 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/lexer-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/bootstrap\/js\/tests\/phantom.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/phantom.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/phantom-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/less\/wells.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -36,17 +47,6 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/static\/vendor\/bootstrap\/js\/tests\/phantom.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/phantom.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/phantom-ck.js",
-      "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-popover.js" : {
       "ignoreWasSetByUser" : 0,
@@ -129,17 +129,6 @@
       "initialSize" : 2711,
       "fileType" : 8192
     },
-    "\/static\/vendor\/bootstrap\/js\/bootstrap-alert.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-alert.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-alert-ck.js",
-      "fileType" : 64
-    },
     "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/test\/wrap.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -149,6 +138,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/test\/wrap-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/js\/bootstrap-alert.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-alert.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-alert-ck.js",
       "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/optparse.js" : {
@@ -248,6 +248,19 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/helpers-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/bootstrap\/less\/responsive-767px-max.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/responsive-767px-max.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/css\/responsive-767px-max.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-signin.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -258,15 +271,6 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-signin.png",
       "initialSize" : 22037,
       "fileType" : 8192
-    },
-    "\/static\/vendor\/bootstrap\/docs\/examples\/starter-template.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/starter-template.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/static\/vendor\/bootstrap\/docs\/examples\/signin.html" : {
       "ignoreWasSetByUser" : 0,
@@ -288,18 +292,14 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/boolean_single-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/less\/responsive-767px-max.less" : {
+    "\/static\/vendor\/bootstrap\/docs\/examples\/starter-template.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/responsive-767px-max.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/css\/responsive-767px-max.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/starter-template.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/static\/vendor\/bootstrap\/less\/utilities.less" : {
       "ignoreWasSetByUser" : 0,
@@ -380,12 +380,12 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/runtime-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/docs\/examples\/carousel.html" : {
+    "\/templates\/trailguide\/api\/docs\/swagger.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/carousel.html",
+      "inputAbbreviatedPath" : "\/templates\/trailguide\/api\/docs\/swagger.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -400,12 +400,12 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/perm_sync-ck.js",
       "fileType" : 64
     },
-    "\/templates\/trailguide\/api\/docs\/swagger.html" : {
+    "\/static\/vendor\/bootstrap\/docs\/examples\/carousel.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/templates\/trailguide\/api\/docs\/swagger.html",
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/carousel.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -429,17 +429,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/static\/vendor\/swagger\/lib\/jquery.wiggle.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery.wiggle.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery.wiggle.min-ck.js",
-      "fileType" : 64
-    },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.mustache.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -449,6 +438,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.mustache-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/swagger\/lib\/jquery.wiggle.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery.wiggle.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery.wiggle.min-ck.js",
       "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/breakingnews.png" : {
@@ -484,17 +484,16 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/line_count_options-ck.js",
       "fileType" : 64
     },
-    "\/utils\/jade2js\/jade2js.coffee" : {
+    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/jade2js.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/jade2js.js",
-      "outputStyle" : 0,
-      "fileType" : 32
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar-ck.js",
+      "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/block-comment.js" : {
       "ignoreWasSetByUser" : 0,
@@ -505,17 +504,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/block-comment-ck.js",
-      "fileType" : 64
-    },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-ck.js",
       "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/mixin.js" : {
@@ -529,6 +517,29 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/mixin-ck.js",
       "fileType" : 64
     },
+    "\/utils\/jade2js\/jade2js.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/jade2js.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/jade2js.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/index.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -538,17 +549,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/index-ck.js",
-      "fileType" : 64
-    },
-    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar-ck.js",
       "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-collapse.js" : {
@@ -654,17 +654,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/case.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/case.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/case-ck.js",
-      "fileType" : 64
-    },
     "\/utils\/jade2js\/node_modules\/optimist\/example\/short.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -674,6 +663,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/short-ck.js",
+      "fileType" : 64
+    },
+    "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/case.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/case.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/case-ck.js",
       "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/compiler.js" : {
@@ -846,24 +846,15 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/root-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/docs\/scaffolding.html" : {
+    "\/static\/vendor\/jquery-1.9.1.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/scaffolding.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/html5shiv.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/html5shiv.js",
+      "inputAbbreviatedPath" : "\/static\/vendor\/jquery-1.9.1.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/html5shiv-ck.js",
+      "outputAbbreviatedPath" : "\/static\/vendor\/jquery-1.9.1-ck.js",
       "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/umask_sync.js" : {
@@ -877,16 +868,25 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/umask_sync-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-responsive-illustrations.png" : {
+    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/html5shiv.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-responsive-illustrations.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-responsive-illustrations.png",
-      "initialSize" : 10572,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/html5shiv.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/html5shiv-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/docs\/scaffolding.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/scaffolding.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/static\/vendor\/bootstrap\/docs\/examples\/justified-nav.html" : {
       "ignoreWasSetByUser" : 0,
@@ -897,16 +897,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/static\/vendor\/jquery-1.9.1.js" : {
+    "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-responsive-illustrations.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/jquery-1.9.1.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/jquery-1.9.1-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-responsive-illustrations.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-responsive-illustrations.png",
+      "initialSize" : 10572,
+      "fileType" : 8192
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-carousel.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1152,15 +1152,6 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-alert-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/qunit.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/qunit.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/static\/vendor\/bootstrap\/less\/hero-unit.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1173,6 +1164,15 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/qunit.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/qunit.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/grid-baseline-20px.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1387,16 +1387,14 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/jade.min-ck.js",
       "fileType" : 64
     },
-    "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node.js" : {
+    "\/static\/vendor\/bootstrap\/less\/tests\/css-tests.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/css-tests.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/jade.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1420,25 +1418,16 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-popover-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/less\/tests\/css-tests.css" : {
+    "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/css-tests.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/jshint.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/jshint.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/jshint.png",
-      "initialSize" : 7258,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node-ck.js",
+      "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/slide-02.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -1450,6 +1439,17 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/slide-02.jpg",
       "initialSize" : 137070,
       "fileType" : 4096
+    },
+    "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/jshint.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/jshint.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/jshint.png",
+      "initialSize" : 7258,
+      "fileType" : 8192
     },
     "\/static\/vendor\/bootstrap\/docs\/base-css.html" : {
       "ignoreWasSetByUser" : 0,
@@ -1484,6 +1484,26 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-affix-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/bootstrap\/less\/tests\/buttons.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/buttons.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/static\/vendor\/swagger\/images\/logo_small.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/images\/logo_small.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/images\/logo_small.png",
+      "initialSize" : 770,
+      "fileType" : 8192
+    },
     "\/static\/vendor\/bootstrap\/less\/navs.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1509,26 +1529,6 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/static\/vendor\/bootstrap\/less\/tests\/buttons.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/buttons.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/static\/vendor\/swagger\/images\/logo_small.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/images\/logo_small.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/images\/logo_small.png",
-      "initialSize" : 770,
-      "fileType" : 8192
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/index.html" : {
       "ignoreWasSetByUser" : 0,
@@ -1563,6 +1563,17 @@
       "initialSize" : 1008,
       "fileType" : 8192
     },
+    "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/index.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/index.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/index-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/less\/scaffolding.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1575,17 +1586,6 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/index.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/index.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/index-ck.js",
-      "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-justified-nav.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1677,17 +1677,6 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/mustache-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-typeahead.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-typeahead.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-typeahead-ck.js",
-      "fileType" : 64
-    },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/tools\/release.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1697,6 +1686,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/tools\/release-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-typeahead.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-typeahead.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-typeahead-ck.js",
       "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/browser-icon-chrome.png" : {
@@ -1844,17 +1844,6 @@
       "outputAbbreviatedPath" : "\/templates\/trailguide\/base.html",
       "fileType" : 512
     },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/application.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/application.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/application-ck.js",
-      "fileType" : 64
-    },
     "\/utils\/jade2js\/node_modules\/optimist\/test\/parse.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1864,6 +1853,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/test\/parse-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/application.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/application.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/application-ck.js",
       "fileType" : 64
     },
     "\/static\/vendor\/swagger\/swagger-ui.js" : {
@@ -1888,15 +1888,6 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.amd-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/less\/tests\/navbar-static-top.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/navbar-static-top.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/comment.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1907,6 +1898,15 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/comment-ck.js",
       "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/less\/tests\/navbar-static-top.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/navbar-static-top.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/static\/vendor\/swagger\/images\/pet_store_api.png" : {
       "ignoreWasSetByUser" : 0,
@@ -2051,17 +2051,6 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/code-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/holder\/holder.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/holder\/holder.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/holder\/holder-ck.js",
-      "fileType" : 64
-    },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-transition.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2071,6 +2060,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-transition-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/swagger\/lib\/handlebars-1.0.rc.1.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/handlebars-1.0.rc.1.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/handlebars-1.0.rc.1-ck.js",
       "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/1.0.0\/hogan.js" : {
@@ -2084,15 +2084,15 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/1.0.0\/hogan-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/swagger\/lib\/handlebars-1.0.rc.1.js" : {
+    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/holder\/holder.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/handlebars-1.0.rc.1.js",
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/holder\/holder.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/handlebars-1.0.rc.1-ck.js",
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/holder\/holder-ck.js",
       "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.0\/hogan.js" : {
@@ -2126,6 +2126,15 @@
       "initialSize" : 137378,
       "fileType" : 4096
     },
+    "\/static\/vendor\/bootstrap\/docs\/javascript.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/javascript.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/static\/vendor\/bootstrap\/docs\/examples\/fluid.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2145,15 +2154,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.common-ck.js",
       "fileType" : 64
-    },
-    "\/static\/vendor\/bootstrap\/docs\/javascript.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/javascript.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/scope.js" : {
       "ignoreWasSetByUser" : 0,
@@ -2210,21 +2210,21 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/x-ck.js",
       "fileType" : 64
     },
-    "\/static\/styles\/css\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/styles\/css\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/stylesheets\/layout.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/stylesheets\/layout.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/static\/styles\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/styles\/css\/style.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
@@ -2296,17 +2296,6 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/text-ck.js",
       "fileType" : 64
     },
-    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter-ck.js",
-      "fileType" : 64
-    },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-affix.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2329,17 +2318,6 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/watch\/test\/test_monitor-ck.js",
       "fileType" : 64
     },
-    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/clobber.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/clobber.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/clobber-ck.js",
-      "fileType" : 64
-    },
     "\/static\/vendor\/bootstrap\/less\/labels-badges.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2353,6 +2331,37 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter-ck.js",
+      "fileType" : 64
+    },
+    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/clobber.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/clobber.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/clobber-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/docs\/assets\/css\/docs.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/css\/docs.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-fluid.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2363,15 +2372,6 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-fluid.png",
       "initialSize" : 209039,
       "fileType" : 8192
-    },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/css\/docs.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/css\/docs.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/template-1.0.5.js" : {
       "ignoreWasSetByUser" : 0,
@@ -2395,17 +2395,6 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/test\/_\/bin-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab-ck.js",
-      "fileType" : 64
-    },
     "\/static\/vendor\/bootstrap\/less\/mixins.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2419,6 +2408,17 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/noise.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2429,6 +2429,26 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/noise.png",
       "initialSize" : 4594,
       "fileType" : 8192
+    },
+    "\/static\/vendor\/swagger\/css\/screen.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/css\/screen.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/mkdirp.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/mkdirp.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/mkdirp-ck.js",
+      "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/less\/dropdowns.less" : {
       "ignoreWasSetByUser" : 0,
@@ -2442,26 +2462,6 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/mkdirp.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/mkdirp.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/mkdirp-ck.js",
-      "fileType" : 64
-    },
-    "\/static\/vendor\/swagger\/css\/screen.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/css\/screen.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-carousel.js" : {
       "ignoreWasSetByUser" : 0,
@@ -2724,15 +2724,15 @@
       "initialSize" : 39837,
       "fileType" : 8192
     },
-    "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.js" : {
+    "\/static\/vendor\/bootstrap\/js\/tests\/server.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.js",
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/server.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min-ck.js",
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/server-ck.js",
       "fileType" : 64
     },
     "\/static\/styles\/css\/home.css" : {
@@ -2755,15 +2755,15 @@
       "initialSize" : 125346,
       "fileType" : 4096
     },
-    "\/static\/vendor\/bootstrap\/js\/tests\/server.js" : {
+    "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/server.js",
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/server-ck.js",
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min-ck.js",
       "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/less\/code.less" : {
@@ -3241,17 +3241,6 @@
       "initialSize" : 81284,
       "fileType" : 4096
     },
-    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/index.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/index.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/index-ck.js",
-      "fileType" : 64
-    },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/lexer.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -3261,6 +3250,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/lexer-ck.js",
+      "fileType" : 64
+    },
+    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/index.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/index.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/index-ck.js",
       "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-carousel.js" : {
@@ -3274,17 +3274,6 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-carousel-ck.js",
       "fileType" : 64
     },
-    "\/utils\/jade2js\/node_modules\/optimist\/example\/xup.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/xup.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/xup-ck.js",
-      "fileType" : 64
-    },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/literal.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -3294,6 +3283,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/literal-ck.js",
+      "fileType" : 64
+    },
+    "\/utils\/jade2js\/node_modules\/optimist\/example\/xup.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/xup.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/xup-ck.js",
       "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/lib\/compiler.js" : {
@@ -3329,17 +3329,6 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/lib\/hogan-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button-ck.js",
-      "fileType" : 64
-    },
     "\/templates\/trailguide\/jade\/home.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -3350,6 +3339,17 @@
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/templates\/trailguide\/home.html",
       "fileType" : 512
+    },
+    "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button-ck.js",
+      "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-alert.js" : {
       "ignoreWasSetByUser" : 0,
@@ -3415,16 +3415,18 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/index-ck.js",
       "fileType" : 64
     },
-    "\/utils\/jade2js\/node_modules\/optimist\/example\/reflect.js" : {
+    "\/static\/styles\/less\/style.less" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
+      "ignore" : 0,
+      "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/reflect.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/reflect-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/static\/styles\/less\/style.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/static\/styles\/css\/style.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/utils\/jade2js\/node_modules\/jade\/node_modules\/commander\/index.js" : {
       "ignoreWasSetByUser" : 0,
@@ -3448,6 +3450,26 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.min-ck.js",
       "fileType" : 64
     },
+    "\/utils\/jade2js\/node_modules\/optimist\/example\/reflect.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/reflect.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/reflect-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/docs\/extend.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/extend.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/test\/break.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -3458,28 +3480,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/test\/break-ck.js",
       "fileType" : 64
-    },
-    "\/static\/styles\/less\/style.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/styles\/less\/style.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/static\/styles\/css\/style.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
-    "\/static\/vendor\/bootstrap\/docs\/extend.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/extend.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/css\/bootstrap.css" : {
       "ignoreWasSetByUser" : 0,
