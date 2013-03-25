@@ -4,37 +4,13 @@
   "files" : {
     "\/static\/vendor\/bootstrap\/js\/bootstrap-button.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-button.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-button-ck.js",
-      "fileType" : 64
-    },
-    "\/static\/vendor\/bootstrap\/less\/wells.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/wells.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/css\/wells.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
-    "\/static\/vendor\/bootstrap\/js\/tests\/phantom.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/phantom.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/phantom-ck.js",
       "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/lexer.js" : {
@@ -48,10 +24,34 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/lexer-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/bootstrap\/less\/wells.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/wells.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/css\/wells.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
+    "\/static\/vendor\/bootstrap\/js\/tests\/phantom.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/phantom.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/phantom-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-popover.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-popover.js",
       "outputStyle" : 1,
@@ -73,7 +73,7 @@
     "\/static\/vendor\/bootstrap\/less\/sprites.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/sprites.less",
       "outputStyle" : 0,
@@ -85,8 +85,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/kippt.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/kippt.png",
       "processed" : 0,
@@ -97,7 +97,7 @@
     "\/static\/vendor\/bootstrap\/less\/carousel.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/carousel.less",
       "outputStyle" : 0,
@@ -120,8 +120,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/ico\/favicon.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/ico\/favicon.png",
       "processed" : 0,
@@ -131,8 +131,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-alert.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-alert.js",
       "outputStyle" : 1,
@@ -162,17 +162,6 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/optparse-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/small-hogan-icon.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/small-hogan-icon.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/small-hogan-icon.png",
-      "initialSize" : 365,
-      "fileType" : 8192
-    },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/doctype.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -183,6 +172,17 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/doctype-ck.js",
       "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/small-hogan-icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/small-hogan-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/small-hogan-icon.png",
+      "initialSize" : 365,
+      "fileType" : 8192
     },
     "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/examples\/pow.js" : {
       "ignoreWasSetByUser" : 0,
@@ -197,8 +197,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/getting-started.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/getting-started.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -206,8 +206,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-typeahead.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-typeahead.js",
       "outputStyle" : 1,
@@ -215,21 +215,21 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-typeahead-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-signin.png" : {
+    "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-twitter-github.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-signin.png",
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-twitter-github.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-signin.png",
-      "initialSize" : 22037,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-twitter-github.png",
+      "initialSize" : 30968,
       "fileType" : 8192
     },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-tooltip.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-tooltip.js",
       "outputStyle" : 1,
@@ -248,10 +248,21 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/helpers-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-signin.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-signin.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-signin.png",
+      "initialSize" : 22037,
+      "fileType" : 8192
+    },
     "\/static\/vendor\/bootstrap\/docs\/examples\/starter-template.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/starter-template.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -259,25 +270,12 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/examples\/signin.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/signin.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
-    },
-    "\/static\/vendor\/bootstrap\/less\/responsive-767px-max.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/responsive-767px-max.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/css\/responsive-767px-max.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
     },
     "\/utils\/jade2js\/node_modules\/optimist\/example\/boolean_single.js" : {
       "ignoreWasSetByUser" : 0,
@@ -290,21 +288,23 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/boolean_single-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-twitter-github.png" : {
+    "\/static\/vendor\/bootstrap\/less\/responsive-767px-max.less" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-twitter-github.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-twitter-github.png",
-      "initialSize" : 30968,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/responsive-767px-max.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/css\/responsive-767px-max.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/static\/vendor\/bootstrap\/less\/utilities.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/utilities.less",
       "outputStyle" : 0,
@@ -327,8 +327,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/examples\/marketing-narrow.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/marketing-narrow.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -337,7 +337,7 @@
     "\/static\/vendor\/bootstrap\/less\/responsive-1200px-min.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/responsive-1200px-min.less",
       "outputStyle" : 0,
@@ -358,6 +358,17 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/nonopt-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/swagger\/swagger-ui.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/swagger-ui.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/swagger-ui.min-ck.js",
+      "fileType" : 64
+    },
     "\/utils\/jade2js\/node_modules\/jade\/runtime.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -371,8 +382,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/examples\/carousel.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/carousel.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -389,23 +400,12 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/perm_sync-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.mustache.js" : {
+    "\/templates\/trailguide\/api\/docs\/swagger.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.mustache.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.mustache-ck.js",
-      "fileType" : 64
-    },
-    "\/static\/vendor\/bootstrap\/js\/tests\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/index.html",
+      "inputAbbreviatedPath" : "\/templates\/trailguide\/api\/docs\/swagger.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -420,10 +420,41 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/race-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/bootstrap\/js\/tests\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/static\/vendor\/swagger\/lib\/jquery.wiggle.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery.wiggle.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery.wiggle.min-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.mustache.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.mustache.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.mustache-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/breakingnews.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/breakingnews.png",
       "processed" : 0,
@@ -453,16 +484,17 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/line_count_options-ck.js",
       "fileType" : 64
     },
-    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar.js" : {
+    "\/utils\/jade2js\/jade2js.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/jade2js.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/jade2js.js",
+      "outputStyle" : 0,
+      "fileType" : 32
     },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/block-comment.js" : {
       "ignoreWasSetByUser" : 0,
@@ -477,8 +509,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.js",
       "outputStyle" : 1,
@@ -499,8 +531,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/index.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/index.js",
       "outputStyle" : 1,
@@ -508,22 +540,21 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/index-ck.js",
       "fileType" : 64
     },
-    "\/utils\/jade2js\/jade2js.coffee" : {
+    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/jade2js.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/jade2js.js",
-      "outputStyle" : 0,
-      "fileType" : 32
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/grammar-ck.js",
+      "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-collapse.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-collapse.js",
       "outputStyle" : 1,
@@ -533,8 +564,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/ico\/apple-touch-icon-72-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/ico\/apple-touch-icon-72-precomposed.png",
       "processed" : 0,
@@ -555,8 +586,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-bootstrap-features.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-bootstrap-features.png",
       "processed" : 0,
@@ -588,8 +619,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.mustache.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.mustache.js",
       "outputStyle" : 1,
@@ -600,7 +631,7 @@
     "\/static\/vendor\/bootstrap\/less\/button-groups.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/button-groups.less",
       "outputStyle" : 0,
@@ -613,7 +644,7 @@
     "\/static\/vendor\/bootstrap\/less\/responsive-navbar.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/responsive-navbar.less",
       "outputStyle" : 0,
@@ -622,17 +653,6 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/utils\/jade2js\/node_modules\/optimist\/example\/short.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/short.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/short-ck.js",
-      "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/case.js" : {
       "ignoreWasSetByUser" : 0,
@@ -643,6 +663,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/case-ck.js",
+      "fileType" : 64
+    },
+    "\/utils\/jade2js\/node_modules\/optimist\/example\/short.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/short.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/short-ck.js",
       "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/compiler.js" : {
@@ -669,8 +700,8 @@
     },
     "\/static\/vendor\/bootstrap\/less\/tests\/forms-responsive.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/forms-responsive.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -678,8 +709,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/lib\/template.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/lib\/template.js",
       "outputStyle" : 1,
@@ -689,8 +720,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/examples\/sticky-footer.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/sticky-footer.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -698,8 +729,8 @@
     },
     "\/static\/vendor\/bootstrap\/less\/tests\/css-tests.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/css-tests.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -708,7 +739,7 @@
     "\/static\/vendor\/bootstrap\/less\/navbar.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/navbar.less",
       "outputStyle" : 0,
@@ -717,6 +748,17 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/static\/vendor\/swagger\/lib\/backbone-min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/backbone-min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/backbone-min-ck.js",
+      "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/parser.js" : {
       "ignoreWasSetByUser" : 0,
@@ -731,8 +773,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-popover.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-popover.js",
       "outputStyle" : 1,
@@ -742,8 +784,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-affix.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-affix.js",
       "outputStyle" : 1,
@@ -764,8 +806,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-marketing-narrow.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-marketing-narrow.png",
       "processed" : 0,
@@ -775,8 +817,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/index.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -784,25 +826,14 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/glyphicons-halflings.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/glyphicons-halflings.png",
       "processed" : 0,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/glyphicons-halflings.png",
       "initialSize" : 12799,
       "fileType" : 8192
-    },
-    "\/static\/vendor\/jquery-1.9.1.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/jquery-1.9.1.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/jquery-1.9.1-ck.js",
-      "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/root.js" : {
       "ignoreWasSetByUser" : 0,
@@ -815,10 +846,19 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/root-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/bootstrap\/docs\/scaffolding.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/scaffolding.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/html5shiv.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/html5shiv.js",
       "outputStyle" : 1,
@@ -837,19 +877,10 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/umask_sync-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/docs\/scaffolding.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/scaffolding.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-responsive-illustrations.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-responsive-illustrations.png",
       "processed" : 0,
@@ -859,17 +890,28 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/examples\/justified-nav.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/justified-nav.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/static\/vendor\/jquery-1.9.1.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/jquery-1.9.1.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/jquery-1.9.1-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-carousel.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-carousel.png",
       "processed" : 0,
@@ -890,8 +932,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/index.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/index.js",
       "outputStyle" : 1,
@@ -901,8 +943,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/ico\/apple-touch-icon-57-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/ico\/apple-touch-icon-57-precomposed.png",
       "processed" : 0,
@@ -913,7 +955,7 @@
     "\/static\/vendor\/bootstrap\/less\/variables.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/variables.less",
       "outputStyle" : 0,
@@ -925,8 +967,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/jquery.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/jquery.js",
       "outputStyle" : 1,
@@ -936,8 +978,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bootstrap-mdo-sfmoma-01.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bootstrap-mdo-sfmoma-01.jpg",
       "processed" : 0,
@@ -947,8 +989,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/css\/bootstrap-responsive.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/css\/bootstrap-responsive.css",
       "outputAbbreviatedPath" : "No Output Path",
@@ -957,7 +999,7 @@
     "\/static\/vendor\/bootstrap\/less\/forms.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/forms.less",
       "outputStyle" : 0,
@@ -970,7 +1012,7 @@
     "\/static\/vendor\/bootstrap\/less\/progress-bars.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/progress-bars.less",
       "outputStyle" : 0,
@@ -991,8 +1033,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-dropdown.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-dropdown.js",
       "outputStyle" : 1,
@@ -1002,8 +1044,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-collapse.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-collapse.js",
       "outputStyle" : 1,
@@ -1013,8 +1055,8 @@
     },
     "\/static\/img\/bootstrap-mdo-sfmoma-02.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/img\/bootstrap-mdo-sfmoma-02.jpg",
       "processed" : 0,
@@ -1024,8 +1066,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-dropdown.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-dropdown.js",
       "outputStyle" : 1,
@@ -1033,10 +1075,43 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-dropdown-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/swagger\/lib\/jquery-1.8.0.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery-1.8.0.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery-1.8.0.min-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/swagger\/images\/wordnik_api.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/images\/wordnik_api.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/images\/wordnik_api.png",
+      "initialSize" : 980,
+      "fileType" : 8192
+    },
+    "\/static\/vendor\/swagger\/lib\/jquery.ba-bbq.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery.ba-bbq.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery.ba-bbq.min-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-dropdown.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-dropdown.js",
       "outputStyle" : 1,
@@ -1046,8 +1121,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-scrollspy.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-scrollspy.js",
       "outputStyle" : 1,
@@ -1057,8 +1132,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/slide-01.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/slide-01.jpg",
       "processed" : 0,
@@ -1068,8 +1143,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-alert.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-alert.js",
       "outputStyle" : 1,
@@ -1077,10 +1152,19 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-alert-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/qunit.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/qunit.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/static\/vendor\/bootstrap\/less\/hero-unit.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/hero-unit.less",
       "outputStyle" : 0,
@@ -1090,19 +1174,10 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/qunit.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/qunit.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/grid-baseline-20px.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/grid-baseline-20px.png",
       "processed" : 0,
@@ -1112,8 +1187,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/components.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/components.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -1122,7 +1197,7 @@
     "\/static\/vendor\/bootstrap\/less\/breadcrumbs.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/breadcrumbs.less",
       "outputStyle" : 0,
@@ -1156,8 +1231,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-scrollspy.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-scrollspy.js",
       "outputStyle" : 1,
@@ -1168,7 +1243,7 @@
     "\/static\/vendor\/bootstrap\/less\/modals.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/modals.less",
       "outputStyle" : 0,
@@ -1180,8 +1255,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-modal.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-modal.js",
       "outputStyle" : 1,
@@ -1191,8 +1266,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/examples\/sticky-footer-navbar.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/sticky-footer-navbar.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -1211,8 +1286,8 @@
     },
     "\/static\/img\/browser-icon-chrome.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/img\/browser-icon-chrome.png",
       "processed" : 0,
@@ -1222,8 +1297,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.amd.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.amd.js",
       "outputStyle" : 1,
@@ -1233,8 +1308,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-masthead-pattern.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bs-docs-masthead-pattern.png",
       "processed" : 0,
@@ -1256,7 +1331,7 @@
     "\/static\/vendor\/bootstrap\/less\/tooltip.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tooltip.less",
       "outputStyle" : 0,
@@ -1269,7 +1344,7 @@
     "\/static\/vendor\/bootstrap\/less\/close.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/close.less",
       "outputStyle" : 0,
@@ -1281,13 +1356,24 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.0\/hogan.min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.0\/hogan.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.0\/hogan.min-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/swagger\/lib\/jquery.slideto.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery.slideto.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/jquery.slideto.min-ck.js",
       "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/jade.min.js" : {
@@ -1301,14 +1387,16 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/jade.min-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/less\/tests\/css-tests.css" : {
+    "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/css-tests.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node-ck.js",
+      "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/jade.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1323,8 +1411,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-popover.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-popover.js",
       "outputStyle" : 1,
@@ -1332,21 +1420,19 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-popover-ck.js",
       "fileType" : 64
     },
-    "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node.js" : {
+    "\/static\/vendor\/bootstrap\/less\/tests\/css-tests.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/node-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/css-tests.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/jshint.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/jshint.png",
       "processed" : 0,
@@ -1356,8 +1442,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/slide-02.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/slide-02.jpg",
       "processed" : 0,
@@ -1367,8 +1453,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/base-css.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/base-css.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -1377,7 +1463,7 @@
     "\/static\/vendor\/bootstrap\/less\/tables.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tables.less",
       "outputStyle" : 0,
@@ -1389,8 +1475,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-affix.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-affix.js",
       "outputStyle" : 1,
@@ -1398,19 +1484,10 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-affix-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/less\/tests\/buttons.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/buttons.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/static\/vendor\/bootstrap\/less\/navs.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/navs.less",
       "outputStyle" : 0,
@@ -1433,10 +1510,30 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/static\/vendor\/bootstrap\/less\/tests\/buttons.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/buttons.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/static\/vendor\/swagger\/images\/logo_small.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/images\/logo_small.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/images\/logo_small.png",
+      "initialSize" : 770,
+      "fileType" : 8192
+    },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/index.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -1445,7 +1542,7 @@
     "\/static\/vendor\/bootstrap\/less\/thumbnails.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/thumbnails.less",
       "outputStyle" : 0,
@@ -1457,14 +1554,27 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/responsive-illustrations.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/responsive-illustrations.png",
       "processed" : 0,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/responsive-illustrations.png",
       "initialSize" : 1008,
       "fileType" : 8192
+    },
+    "\/static\/vendor\/bootstrap\/less\/scaffolding.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/scaffolding.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/css\/scaffolding.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/index.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1477,23 +1587,10 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/index-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/less\/scaffolding.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/scaffolding.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/css\/scaffolding.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-justified-nav.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-justified-nav.png",
       "processed" : 0,
@@ -1504,7 +1601,7 @@
     "\/static\/vendor\/bootstrap\/less\/popovers.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/popovers.less",
       "outputStyle" : 0,
@@ -1516,8 +1613,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/stripes.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/stripes.png",
       "processed" : 0,
@@ -1538,8 +1635,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/spec.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/spec.js",
       "outputStyle" : 1,
@@ -1549,8 +1646,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-modal.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-modal.js",
       "outputStyle" : 1,
@@ -1571,8 +1668,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/mustache.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/mustache.js",
       "outputStyle" : 1,
@@ -1582,8 +1679,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-typeahead.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-typeahead.js",
       "outputStyle" : 1,
@@ -1593,8 +1690,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/tools\/release.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/tools\/release.js",
       "outputStyle" : 1,
@@ -1604,8 +1701,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/browser-icon-chrome.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/browser-icon-chrome.png",
       "processed" : 0,
@@ -1615,8 +1712,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/8020select.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/8020select.png",
       "processed" : 0,
@@ -1626,8 +1723,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/html\/list.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/test\/html\/list.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -1657,8 +1754,8 @@
     },
     "\/static\/vendor\/bootstrap\/less\/tests\/navbar-fixed-top.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/navbar-fixed-top.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -1680,7 +1777,7 @@
     "\/static\/vendor\/bootstrap\/less\/layouts.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/layouts.less",
       "outputStyle" : 0,
@@ -1693,7 +1790,7 @@
     "\/static\/vendor\/bootstrap\/less\/media.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/media.less",
       "outputStyle" : 0,
@@ -1705,8 +1802,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/template-1.0.5.min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/template-1.0.5.min.js",
       "outputStyle" : 1,
@@ -1727,8 +1824,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-tab.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-tab.js",
       "outputStyle" : 1,
@@ -1749,8 +1846,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/application.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/application.js",
       "outputStyle" : 1,
@@ -1769,16 +1866,36 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/test\/parse-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/swagger\/swagger-ui.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/swagger-ui.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/swagger-ui-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.amd.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.amd.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.amd-ck.js",
       "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/less\/tests\/navbar-static-top.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/navbar-static-top.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/comment.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1791,14 +1908,16 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/comment-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/less\/tests\/navbar-static-top.html" : {
+    "\/static\/vendor\/swagger\/images\/pet_store_api.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/navbar-static-top.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/images\/pet_store_api.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/images\/pet_store_api.png",
+      "initialSize" : 824,
+      "fileType" : 8192
     },
     "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/example\/center.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1811,10 +1930,19 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/example\/center-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/swagger\/css\/hightlight.default.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/css\/hightlight.default.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/browser-icon-firefox.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/browser-icon-firefox.png",
       "processed" : 0,
@@ -1835,8 +1963,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bootstrap-mdo-sfmoma-03.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bootstrap-mdo-sfmoma-03.jpg",
       "processed" : 0,
@@ -1846,8 +1974,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-tooltip.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-tooltip.js",
       "outputStyle" : 1,
@@ -1857,8 +1985,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tooltip.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tooltip.js",
       "outputStyle" : 1,
@@ -1868,8 +1996,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-tab.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-tab.js",
       "outputStyle" : 1,
@@ -1879,8 +2007,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-transition.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-transition.js",
       "outputStyle" : 1,
@@ -1890,8 +2018,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/ico\/apple-touch-icon-114-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/ico\/apple-touch-icon-114-precomposed.png",
       "processed" : 0,
@@ -1902,7 +2030,7 @@
     "\/static\/vendor\/bootstrap\/less\/grid.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/grid.less",
       "outputStyle" : 0,
@@ -1925,8 +2053,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/holder\/holder.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/holder\/holder.js",
       "outputStyle" : 1,
@@ -1936,8 +2064,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/bootstrap-transition.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-transition.js",
       "outputStyle" : 1,
@@ -1947,8 +2075,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/1.0.0\/hogan.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/1.0.0\/hogan.js",
       "outputStyle" : 1,
@@ -1956,10 +2084,21 @@
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/1.0.0\/hogan-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/swagger\/lib\/handlebars-1.0.rc.1.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/handlebars-1.0.rc.1.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/handlebars-1.0.rc.1-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.0\/hogan.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.0\/hogan.js",
       "outputStyle" : 1,
@@ -1969,8 +2108,8 @@
     },
     "\/static\/vendor\/bootstrap\/less\/tests\/navbar.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/navbar.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -1978,8 +2117,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/slide-03.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/slide-03.jpg",
       "processed" : 0,
@@ -1989,8 +2128,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/examples\/fluid.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/fluid.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -1998,8 +2137,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.common.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.common.js",
       "outputStyle" : 1,
@@ -2009,8 +2148,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/javascript.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/javascript.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -2029,8 +2168,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/google-code-prettify\/prettify.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/google-code-prettify\/prettify.css",
       "outputAbbreviatedPath" : "No Output Path",
@@ -2039,7 +2178,7 @@
     "\/static\/vendor\/bootstrap\/less\/reset.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/reset.less",
       "outputStyle" : 0,
@@ -2051,8 +2190,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/glyphicons-halflings-white.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/glyphicons-halflings-white.png",
       "processed" : 0,
@@ -2071,15 +2210,6 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/x-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/stylesheets\/layout.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/stylesheets\/layout.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/static\/styles\/css\/style.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2089,10 +2219,19 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/stylesheets\/layout.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/stylesheets\/layout.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/static\/vendor\/bootstrap\/less\/pager.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/pager.less",
       "outputStyle" : 0,
@@ -2104,8 +2243,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/stylesheets\/skeleton.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/stylesheets\/skeleton.css",
       "outputAbbreviatedPath" : "No Output Path",
@@ -2114,7 +2253,7 @@
     "\/static\/vendor\/bootstrap\/less\/pagination.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/pagination.less",
       "outputStyle" : 0,
@@ -2123,6 +2262,17 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/static\/vendor\/bootstrap\/js\/bootstrap-carousel.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-carousel.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-carousel-ck.js",
+      "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/watch\/test\/test_watchTree.js" : {
       "ignoreWasSetByUser" : 0,
@@ -2133,17 +2283,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/watch\/test\/test_watchTree-ck.js",
-      "fileType" : 64
-    },
-    "\/static\/vendor\/bootstrap\/js\/bootstrap-carousel.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-carousel.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/bootstrap-carousel-ck.js",
       "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/text.js" : {
@@ -2157,10 +2296,21 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/text-ck.js",
       "fileType" : 64
     },
+    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-affix.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-affix.js",
       "outputStyle" : 1,
@@ -2179,19 +2329,6 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/watch\/test\/test_monitor-ck.js",
       "fileType" : 64
     },
-    "\/static\/vendor\/bootstrap\/less\/labels-badges.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/labels-badges.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/css\/labels-badges.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
     "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/clobber.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2203,30 +2340,23 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/clobber-ck.js",
       "fileType" : 64
     },
-    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter.js" : {
+    "\/static\/vendor\/bootstrap\/less\/labels-badges.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/coffee-script\/lib\/coffee-script\/rewriter-ck.js",
-      "fileType" : 64
-    },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/css\/docs.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/css\/docs.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/labels-badges.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/css\/labels-badges.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-fluid.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-fluid.png",
       "processed" : 0,
@@ -2234,10 +2364,19 @@
       "initialSize" : 209039,
       "fileType" : 8192
     },
+    "\/static\/vendor\/bootstrap\/docs\/assets\/css\/docs.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/css\/docs.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/template-1.0.5.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/template-1.0.5.js",
       "outputStyle" : 1,
@@ -2256,10 +2395,21 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/test\/_\/bin-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/less\/mixins.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/mixins.less",
       "outputStyle" : 0,
@@ -2269,21 +2419,10 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-tab-ck.js",
-      "fileType" : 64
-    },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/noise.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/noise.png",
       "processed" : 0,
@@ -2294,7 +2433,7 @@
     "\/static\/vendor\/bootstrap\/less\/dropdowns.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/dropdowns.less",
       "outputStyle" : 0,
@@ -2315,15 +2454,35 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/mkdirp-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/swagger\/css\/screen.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/css\/screen.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-carousel.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-carousel.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-carousel-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/swagger\/lib\/highlight.7.3.pack.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/highlight.7.3.pack.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/highlight.7.3.pack-ck.js",
       "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/index.js" : {
@@ -2351,7 +2510,7 @@
     "\/static\/vendor\/bootstrap\/less\/bootstrap.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/bootstrap.less",
       "outputStyle" : 0,
@@ -2363,8 +2522,8 @@
     },
     "\/static\/vendor\/bootstrap\/img\/glyphicons-halflings-white.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/img\/glyphicons-halflings-white.png",
       "processed" : 0,
@@ -2383,8 +2542,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/qunit.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/qunit.js",
       "outputStyle" : 1,
@@ -2394,8 +2553,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bootstrap-docs-readme.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bootstrap-docs-readme.png",
       "processed" : 0,
@@ -2417,7 +2576,7 @@
     "\/static\/vendor\/bootstrap\/less\/responsive-768px-979px.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/responsive-768px-979px.less",
       "outputStyle" : 0,
@@ -2440,8 +2599,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/ico\/apple-touch-icon-144-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/ico\/apple-touch-icon-144-precomposed.png",
       "processed" : 0,
@@ -2463,7 +2622,7 @@
     "\/static\/vendor\/bootstrap\/less\/type.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/type.less",
       "outputStyle" : 0,
@@ -2476,7 +2635,7 @@
     "\/static\/vendor\/bootstrap\/less\/buttons.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/buttons.less",
       "outputStyle" : 0,
@@ -2488,8 +2647,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.3\/hogan.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.3\/hogan.js",
       "outputStyle" : 1,
@@ -2499,8 +2658,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.common.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.common.js",
       "outputStyle" : 1,
@@ -2521,8 +2680,8 @@
     },
     "\/static\/vendor\/bootstrap\/img\/glyphicons-halflings.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/img\/glyphicons-halflings.png",
       "processed" : 0,
@@ -2532,8 +2691,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/adoptahydrant.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/adoptahydrant.png",
       "processed" : 0,
@@ -2544,7 +2703,7 @@
     "\/static\/vendor\/bootstrap\/less\/responsive.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/responsive.less",
       "outputStyle" : 0,
@@ -2556,8 +2715,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/fleetio.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/fleetio.png",
       "processed" : 0,
@@ -2565,15 +2724,15 @@
       "initialSize" : 39837,
       "fileType" : 8192
     },
-    "\/static\/vendor\/bootstrap\/js\/tests\/server.js" : {
+    "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/server.js",
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/server-ck.js",
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min-ck.js",
       "fileType" : 64
     },
     "\/static\/styles\/css\/home.css" : {
@@ -2587,8 +2746,8 @@
     },
     "\/static\/img\/bootstrap-mdo-sfmoma-01.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/img\/bootstrap-mdo-sfmoma-01.jpg",
       "processed" : 0,
@@ -2596,21 +2755,21 @@
       "initialSize" : 125346,
       "fileType" : 4096
     },
-    "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.js" : {
+    "\/static\/vendor\/bootstrap\/js\/tests\/server.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min.js",
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/server.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.min-ck.js",
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/server-ck.js",
       "fileType" : 64
     },
     "\/static\/vendor\/bootstrap\/less\/code.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/code.less",
       "outputStyle" : 0,
@@ -2623,7 +2782,7 @@
     "\/static\/vendor\/bootstrap\/less\/component-animations.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/component-animations.less",
       "outputStyle" : 0,
@@ -2635,8 +2794,8 @@
     },
     "\/static\/img\/bootstrap-mdo-sfmoma-03.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/img\/bootstrap-mdo-sfmoma-03.jpg",
       "processed" : 0,
@@ -2644,21 +2803,10 @@
       "initialSize" : 49063,
       "fileType" : 4096
     },
-    "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-modal.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-modal.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-modal-ck.js",
-      "fileType" : 64
-    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-starter.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-starter.png",
       "processed" : 0,
@@ -2666,10 +2814,21 @@
       "initialSize" : 36099,
       "fileType" : 8192
     },
+    "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-modal.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-modal.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-modal-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-button.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-button.js",
       "outputStyle" : 1,
@@ -2679,8 +2838,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-sticky-footer.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-sticky-footer.png",
       "processed" : 0,
@@ -2712,8 +2871,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/customize.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/customize.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -2721,8 +2880,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/google-code-prettify\/prettify.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/google-code-prettify\/prettify.js",
       "outputStyle" : 1,
@@ -2741,8 +2900,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/jquery.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/vendor\/jquery.js",
       "outputStyle" : 1,
@@ -2752,8 +2911,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/tools\/web_templates.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/tools\/web_templates.js",
       "outputStyle" : 1,
@@ -2763,8 +2922,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/logo.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/images\/logo.png",
       "processed" : 0,
@@ -2775,7 +2934,7 @@
     "\/static\/vendor\/bootstrap\/less\/accordion.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/accordion.less",
       "outputStyle" : 0,
@@ -2818,10 +2977,21 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/mkdirp\/test\/return-ck.js",
       "fileType" : 64
     },
+    "\/static\/vendor\/swagger\/lib\/swagger.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/swagger.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/swagger-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-marketing.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/bootstrap-example-marketing.png",
       "processed" : 0,
@@ -2831,8 +3001,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/1.0.0\/hogan.min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/1.0.0\/hogan.min.js",
       "outputStyle" : 1,
@@ -2842,8 +3012,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-transition.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-transition.js",
       "outputStyle" : 1,
@@ -2864,8 +3034,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/less-logo-large.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/less-logo-large.png",
       "processed" : 0,
@@ -2875,8 +3045,8 @@
     },
     "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-phantom.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-phantom.js",
       "outputStyle" : 1,
@@ -2919,8 +3089,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.5\/hogan-1.0.5.js",
       "outputStyle" : 1,
@@ -2941,13 +3111,24 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-scrollspy.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-scrollspy.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-scrollspy-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/swagger\/lib\/underscore-min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/underscore-min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/swagger\/lib\/underscore-min-ck.js",
       "fileType" : 64
     },
     "\/static\/styles\/less\/home.less" : {
@@ -2965,8 +3146,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/browser-icon-safari.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/examples\/browser-icon-safari.png",
       "processed" : 0,
@@ -2976,8 +3157,8 @@
     },
     "\/static\/vendor\/bootstrap\/less\/tests\/forms.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/tests\/forms.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -2996,8 +3177,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.3\/hogan.min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/web\/builds\/1.0.3\/hogan.min.js",
       "outputStyle" : 1,
@@ -3029,8 +3210,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/soundready.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/soundready.png",
       "processed" : 0,
@@ -3051,8 +3232,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bootstrap-mdo-sfmoma-02.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/bootstrap-mdo-sfmoma-02.jpg",
       "processed" : 0,
@@ -3084,24 +3265,13 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-carousel.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-carousel.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-carousel-ck.js",
-      "fileType" : 64
-    },
-    "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/literal.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/literal.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/literal-ck.js",
       "fileType" : 64
     },
     "\/utils\/jade2js\/node_modules\/optimist\/example\/xup.js" : {
@@ -3115,10 +3285,21 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/xup-ck.js",
       "fileType" : 64
     },
+    "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/literal.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/literal.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/lib\/nodes\/literal-ck.js",
+      "fileType" : 64
+    },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/lib\/compiler.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/lib\/compiler.js",
       "outputStyle" : 1,
@@ -3139,13 +3320,24 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/lib\/hogan.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/lib\/hogan.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/build\/node_modules\/hogan.js\/lib\/hogan-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button-ck.js",
       "fileType" : 64
     },
     "\/templates\/trailguide\/jade\/home.jade" : {
@@ -3159,21 +3351,10 @@
       "outputAbbreviatedPath" : "\/templates\/trailguide\/home.html",
       "fileType" : 512
     },
-    "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/js\/tests\/unit\/bootstrap-button-ck.js",
-      "fileType" : 64
-    },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-alert.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-alert.js",
       "outputStyle" : 1,
@@ -3183,8 +3364,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/gathercontent.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/img\/example-sites\/gathercontent.png",
       "processed" : 0,
@@ -3194,8 +3375,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-typeahead.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-typeahead.js",
       "outputStyle" : 1,
@@ -3205,8 +3386,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/examples\/hero.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/examples\/hero.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -3234,28 +3415,6 @@
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/index-ck.js",
       "fileType" : 64
     },
-    "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/test\/break.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/test\/break.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/test\/break-ck.js",
-      "fileType" : 64
-    },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.min-ck.js",
-      "fileType" : 64
-    },
     "\/utils\/jade2js\/node_modules\/optimist\/example\/reflect.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -3265,6 +3424,39 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/example\/reflect-ck.js",
+      "fileType" : 64
+    },
+    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/commander\/index.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/commander\/index.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/commander\/index-ck.js",
+      "fileType" : 64
+    },
+    "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap.min-ck.js",
+      "fileType" : 64
+    },
+    "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/test\/break.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/test\/break.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/optimist\/node_modules\/wordwrap\/test\/break-ck.js",
       "fileType" : 64
     },
     "\/static\/styles\/less\/style.less" : {
@@ -3282,28 +3474,17 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/extend.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/extend.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/utils\/jade2js\/node_modules\/jade\/node_modules\/commander\/index.js" : {
+    "\/static\/vendor\/bootstrap\/docs\/assets\/css\/bootstrap.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/commander\/index.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/utils\/jade2js\/node_modules\/jade\/node_modules\/commander\/index-ck.js",
-      "fileType" : 64
-    },
-    "\/static\/vendor\/bootstrap\/docs\/assets\/css\/bootstrap.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/css\/bootstrap.css",
       "outputAbbreviatedPath" : "No Output Path",
@@ -3323,7 +3504,7 @@
     "\/static\/vendor\/bootstrap\/less\/alerts.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/alerts.less",
       "outputStyle" : 0,
@@ -3335,8 +3516,8 @@
     },
     "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-collapse.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/docs\/assets\/js\/bootstrap-collapse.js",
       "outputStyle" : 1,
@@ -3347,7 +3528,7 @@
     "\/static\/vendor\/bootstrap\/less\/responsive-utilities.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/static\/vendor\/bootstrap\/less\/responsive-utilities.less",
       "outputStyle" : 0,

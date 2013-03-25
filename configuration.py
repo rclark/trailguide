@@ -8,6 +8,6 @@ def apply_site_parameters(request):
     """
     return {
         "domain": Site.objects.get_current().domain, # Maybe this is dumb
-        "site_title": "Tucson Trailguide"        
+        "site_title": "Tucson Trail Guide"
     }
     
