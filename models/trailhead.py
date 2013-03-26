@@ -1,7 +1,6 @@
 from django.contrib.gis.db import models
 from django.contrib.gis import admin
 from django.db.models import Q
-from trailguide.models import Route
 
 class Trailhead(models.Model):
     """Point features representing trailheads"""
@@ -18,9 +17,10 @@ class Trailhead(models.Model):
         """
         Return a list of routes that use this trailhead
         as a starting or ending point.
-        """
-        return Route.objects.filter(Q(th_start=self) | Q(th_end=self))
 
+        Route = get_model("trailguide", "Route")
+        return Route.objects.filter(Q(th_start=self) | Q(th_end=self))
+        """
     
 class TrailheadAdmin(admin.OSMGeoAdmin):
     pass

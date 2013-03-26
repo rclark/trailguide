@@ -10,9 +10,9 @@ class Route(models.Model):
         app_label = 'trailguide'
     
     name = models.CharField(max_length=255)
-    th_start = models.ForeignKey(Trailhead, help_text="The starting trailhead.")
-    th_end = models.ForeignKey(Trailhead, help_text="The ending trailhead (may be the same as the starting trailhead).")
-    segments = models.ManyToManyField(Segment, through='SegmentPosition')
+    th_start = models.ForeignKey("Trailhead", related_name="th_start", help_text="The starting trailhead.")
+    th_end = models.ForeignKey("Trailhead", related_name="th_end", help_text="The ending trailhead (may be the same as the starting trailhead).")
+    segments = models.ManyToManyField("Segment", through="SegmentPosition")
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
 
@@ -76,12 +76,6 @@ class Route(models.Model):
         for segment in self.segments:
             result.append([ notes for notes in segment.notes ])
         return result
-
-
-class SegmentPosition(models.Model):
-    route = models.ForeignKey(Route)
-    segment = models.ForeignKey(Segment)
-    position = models.IntegerField()
     
 class RouteAdmin(admin.OSMGeoAdmin):
     pass
