@@ -10,11 +10,11 @@ class SegmentTestCase(TestCase):
     """Test Segment model methods"""
     sample_coords = [ [100, 0], [101, 1], [110, 9] ]
     geo_points = [ geos.Point(pnt[0], pnt[1], srid=4326) for pnt in sample_coords ]
-    proj_srs = gdal.SpatialReference(900913)
+    proj_srs = gdal.SpatialReference(3857)
     proj_points = [ pnt.ogr.transform(proj_srs, clone=True) for pnt in geo_points ]
     sample_geojson = '{ "type": "LineString", "coordinates": %s }' % json.dumps(sample_coords)
     geo_geom = geos.GEOSGeometry(sample_geojson, 4326)
-    proj_geom = geos.GEOSGeometry(geo_geom.ogr.transform(proj_srs, clone=True).wkt, 900913)
+    proj_geom = geos.GEOSGeometry(geo_geom.ogr.transform(proj_srs, clone=True).wkt, 3857)
     sample_segment = Segment(condition=1, geo=geos.GEOSGeometry(sample_geojson))
 
     def setUp(self):

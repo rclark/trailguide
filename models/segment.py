@@ -12,7 +12,7 @@ class Segment(models.Model):
     class Meta:
         app_label = 'trailguide'
 
-    proj_epsg = 900913
+    proj_epsg = 3857
     proj_srs = gdal.SpatialReference(proj_epsg)
 
     name = models.CharField(max_length=255, blank=True)
@@ -46,8 +46,7 @@ class Segment(models.Model):
 
     def elevation_array(self, dem=Dem()):
         """Generate an array of elevation values along the segment"""
-        threshold = dem.pixel_distance
-        return [ dem.read_value(pnt) for pnt in self.densified_point_array(threshold) ]
+        return [ dem.read_value(pnt) for pnt in self.densified_point_array(dem.pixel_distance) ]
 
     def _distance(self, first_point, second_point):
         """Calculate the linear distance between two points"""
