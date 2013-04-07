@@ -9,3 +9,12 @@ LOG:  unexpected EOF on client connection
 LOG:  unexpected EOF on client connection
 LOG:  unexpected EOF on client connection
 LOG:  unexpected EOF on client connection
+ERROR:  database "test_trailguide" already exists
+STATEMENT:  CREATE DATABASE "test_trailguide"  TEMPLATE "template_postgis"
+ERROR:  database "test_trailguide" is being accessed by other users
+DETAIL:  There are 1 other session(s) using the database.
+STATEMENT:  DROP DATABASE "test_trailguide"
+LOG:  unexpected EOF on client connection
+LOG:  unexpected EOF on client connection
+ERROR:  database "test_trailguide" already exists
+STATEMENT:  CREATE DATABASE "test_trailguide"  TEMPLATE "template_postgis"

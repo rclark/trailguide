@@ -8,8 +8,3 @@ class SegmentPosition(models.Model):
     route = models.ForeignKey("Route")
     segment = models.ForeignKey("Segment")
     position = models.IntegerField()
-    
-    def save(self, *args, **kwargs):
-        """On save, re-save the route (with new geometry)."""
-        super(SegmentPosition, self).save(*args, **kwargs)
-        self.route.create_geometry()

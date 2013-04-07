@@ -1,6 +1,7 @@
 from django.contrib.gis.db import models
 from django.contrib.gis import admin
 from django.contrib.gis.geos import GeometryCollection
+from django.contrib.gis.measure import Distance
 from django.db.models import Avg
 from trailguide.models.trailhead import Trailhead
 from trailguide.models.segment import Segment
@@ -18,7 +19,6 @@ class Route(models.Model):
     date_updated = models.DateTimeField(auto_now=True)
 
     # Geospatial components of the model    
-    geo = models.GeometryCollectionField(geography=True, srid=4326, null=True)
     objects = models.GeoManager()
     
     def _add_segments_field(self, method):
@@ -31,14 +31,14 @@ class Route(models.Model):
     
     def length(self):
         """
-        Calculate the route's length by adding the lengths of
-        all constituent segments.
+        Calculate the route's length by creating a distance object
+        that adds the lengths of all constituent segments.
         """
-        print len(self.segments.all())
+        total_distance = Distance()
         for segment in self.segments.all():
-            print segment.length()
+            total_distance += segment.length()
         
-        return 2
+        return total_distance
     
     def elevation_gains(self):
         """
@@ -81,11 +81,6 @@ class Route(models.Model):
         for segment in self.segments:
             result.append([ notes for notes in segment.notes ])
         return result
-
-    def create_geometry(self):
-        """Create a geometry collection containing the geometries of all route's segments."""
-        self.geo = GeometryCollection(*[ segment.geo for segment in self.segments.all() ])
-        self.save()
     
 class RouteAdmin(admin.OSMGeoAdmin):
     pass
