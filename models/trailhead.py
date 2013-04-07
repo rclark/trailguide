@@ -13,15 +13,6 @@ class Trailhead(models.Model):
     geo = models.PointField(geography=True, srid=4326)
     objects = models.GeoManager()
     
-    def routes(self):
-        """
-        Return a list of routes that use this trailhead
-        as a starting or ending point.
-
-        Route = get_model("trailguide", "Route")
-        return Route.objects.filter(Q(th_start=self) | Q(th_end=self))
-        """
-    
 class TrailheadAdmin(admin.OSMGeoAdmin):
     pass
 

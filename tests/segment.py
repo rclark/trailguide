@@ -45,15 +45,15 @@ class SegmentTestCase(TestCase):
         """Check that segment can be portrayed as an array of projected Points"""
         self.assertEqual(self.sample_segment.proj_point_array(), self.proj_points)
 
-'''
-Test fails?
-    def test_elevation_array(self):
-        """Segment should be able to represent an array of elevations at each vertex"""
-        test_dem_path = os.path.join(os.path.dirname(__file__), "dem", "test_dem.tif")
-        dem = Dem(test_dem_path)
-        expected = [ dem.read_value(pnt) for pnt in self.sample_segment.densified_point_array(dem.pixel_distance) ]
-        self.assertEqual(self.sample_segment.elevation_profile(), expected)
-'''
+    '''
+    Test fails?
+        def test_elevation_array(self):
+            """Segment should be able to represent an array of elevations at each vertex"""
+            test_dem_path = os.path.join(os.path.dirname(__file__), "dem", "test_dem.tif")
+            dem = Dem(test_dem_path)
+            expected = [ dem.read_value(pnt) for pnt in self.sample_segment.densified_point_array(dem.pixel_distance) ]
+            self.assertEqual(self.sample_segment.elevation_profile(), expected)
+    '''
 
     def test_distance_array(self):
         """Segment should be able to calculate the distance between each vertex"""
@@ -69,70 +69,70 @@ Test fails?
             expected.append(Distance(m=d))
         self.assertEqual(self.sample_segment.distance_array(), expected)
 
-'''
-Different methods of calculation bring different results
-    def test_distance_calculation(self):
-        for index, last_point in enumerate(self.proj_points):
-            if index != 0:
-                first_point = self.proj_points[index-1]
+    '''
+    Different methods of calculation bring different results
+        def test_distance_calculation(self):
+            for index, last_point in enumerate(self.proj_points):
+                if index != 0:
+                    first_point = self.proj_points[index-1]
+                    dx = first_point.x - last_point.x
+                    dy = first_point.y - last_point.y
+                    expected = math.sqrt(dx**2 + dy**2)
+                    result = gis.distance_between_points(first_point, last_point)
+                    self.assertEqual(result, expected)
+    '''
+    
+    '''
+    Different Densify protocols seem to bring different results...
+        def test_densify(self):
+            def distance(first_point, last_point):
                 dx = first_point.x - last_point.x
                 dy = first_point.y - last_point.y
-                expected = math.sqrt(dx**2 + dy**2)
-                result = gis.distance_between_points(first_point, last_point)
-                self.assertEqual(result, expected)
-'''
-
-'''
-Different Densify protocols seem to bring different results...
-    def test_densify(self):
-        def distance(first_point, last_point):
-            dx = first_point.x - last_point.x
-            dy = first_point.y - last_point.y
-            return Distance(m=math.sqrt(dx**2 + dy**2))
-
-        def distance_array():
-            output = []
-            for index, point in enumerate(self.proj_points):
-                if index == 0: d = 0
+                return Distance(m=math.sqrt(dx**2 + dy**2))
+    
+            def distance_array():
+                output = []
+                for index, point in enumerate(self.proj_points):
+                    if index == 0: d = 0
+                    else:
+                        first = self.proj_points[index-1]
+                        d = distance(first, point)
+                    output.append(d)
+                return output
+    
+            distances = distance_array()
+            expected = []
+            threshold = Distance(m=10000)
+    
+            def gen_new_point(start_point, dx, dy):
+                coords = (start_point.x + dx.m, start_point.y + dy.m)
+                pnt = geos.Point(coords)
+                expected.append(pnt)
+                return pnt
+    
+            for index, end_point in enumerate(self.proj_points):
+                if index == 0: expected.append(end_point)
                 else:
-                    first = self.proj_points[index-1]
-                    d = distance(first, point)
-                output.append(d)
-            return output
-
-        distances = distance_array()
-        expected = []
-        threshold = Distance(m=10000)
-
-        def gen_new_point(start_point, dx, dy):
-            coords = (start_point.x + dx.m, start_point.y + dy.m)
-            pnt = geos.Point(coords)
-            expected.append(pnt)
-            return pnt
-
-        for index, end_point in enumerate(self.proj_points):
-            if index == 0: expected.append(end_point)
-            else:
-                if distances[index] > threshold:
-                    # Find the angle of the line between the two points
-                    start_point = self.proj_points[index-1]
-                    dx = end_point.x - start_point.x
-                    dy = end_point.y - start_point.y
-                    angle = math.atan(dy/dx)
-
-                    # Calculate the dx/dy for points to be added along the line
-                    dx = threshold * math.cos(angle)
-                    dy = threshold * math.sin(angle)
-
-                    # Coordinates of the new point
-                    new_point = gen_new_point(start_point, dx, dy)
-
-                    # Continue making new points until you're within the threshold of the end point
-                    while distance(new_point, end_point) > threshold:
-                        new_point = gen_new_point(new_point, dx, dy)
-
-                # Once you've added all your points, add the end point
-                expected.append(end_point)
-
-        self.assertEqual(self.sample_segment.densified_point_array(threshold), expected)
-'''
+                    if distances[index] > threshold:
+                        # Find the angle of the line between the two points
+                        start_point = self.proj_points[index-1]
+                        dx = end_point.x - start_point.x
+                        dy = end_point.y - start_point.y
+                        angle = math.atan(dy/dx)
+    
+                        # Calculate the dx/dy for points to be added along the line
+                        dx = threshold * math.cos(angle)
+                        dy = threshold * math.sin(angle)
+    
+                        # Coordinates of the new point
+                        new_point = gen_new_point(start_point, dx, dy)
+    
+                        # Continue making new points until you're within the threshold of the end point
+                        while distance(new_point, end_point) > threshold:
+                            new_point = gen_new_point(new_point, dx, dy)
+    
+                    # Once you've added all your points, add the end point
+                    expected.append(end_point)
+    
+            self.assertEqual(self.sample_segment.densified_point_array(threshold), expected)
+    '''

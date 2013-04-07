@@ -1,0 +1,11 @@
+LOG:  database system was shut down at 2013-03-24 20:33:17 MST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  column "name" of relation "trailguide_segment" does not exist at character 35
+STATEMENT:  INSERT INTO "trailguide_segment" ("name", "condition", "notes", "date_created", "date_updated", "geo") VALUES ('', 1, '', '2013-04-07', '2013-04-07 22:06:17.856114+00:00', ST_GeomFromEWKB('\x0102000020e610000003000000000000000000594000000000000000000000000000405940000000000000f03f0000000000805b400000000000002240'::bytea)) RETURNING "trailguide_segment"."id"
+LOG:  unexpected EOF on client connection
+LOG:  unexpected EOF on client connection
+LOG:  unexpected EOF on client connection
+LOG:  unexpected EOF on client connection
+LOG:  unexpected EOF on client connection
+LOG:  unexpected EOF on client connection
