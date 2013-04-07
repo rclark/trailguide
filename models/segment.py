@@ -5,7 +5,7 @@ from django.contrib.gis.measure import Distance
 from trailguide.models.pointofinterest import PointOfInterest
 from trailguide.models.constants import trail_conditions, difficulties
 from trailguide.models.dem import Dem
-import math
+from trailguide.utils import gis
 
 class Segment(models.Model):
     """Line features representing a trail segment"""
@@ -24,7 +24,7 @@ class Segment(models.Model):
     points_of_interest = models.ManyToManyField(PointOfInterest, blank=True)
 
     # Geospatial components of the model
-    geo = models.LineStringField(geography=True, srid=4326)
+    geo = models.LineStringField(srid=4326)
     objects = models.GeoManager()
 
     def geom_in_spherical_mercator(self):
@@ -36,74 +36,50 @@ class Segment(models.Model):
         """Calculate the length of the line segment"""
         return Distance(m=self.geom_in_spherical_mercator().length)
 
-    def as_point_array(self):
+    def geo_point_array(self):
         """Represent the geometry of the segment as an array of Points"""
         return [ geos.Point(coord[0], coord[1], srid=4326) for coord in self.geo.coords ]
 
-    def as_projected_point_array(self):
+    def proj_point_array(self):
         """Represent the geometry of the segment as an array of projected Points"""
-        return [ pnt.ogr.transform(self.proj_srs, clone=True) for pnt in self.as_point_array() ]
-
-    def elevation_array(self, dem=Dem()):
-        """Generate an array of elevation values along the segment"""
-        return [ dem.read_value(pnt) for pnt in self.densified_point_array(dem.pixel_distance) ]
-
-    def _distance(self, first_point, second_point):
-        """Calculate the linear distance between two points"""
-        dx = first_point.x - second_point.x
-        dy = first_point.y - second_point.y
-        return math.sqrt(dx**2 + dy**2)
+        return [ pnt.ogr.transform(self.proj_srs, clone=True) for pnt in self.geo_point_array() ]
 
     def distance_array(self):
         """Generate an array of distances between each vertex"""
-        proj_points = self.as_projected_point_array()
-        result = []
-        for index, end_point in enumerate(proj_points):
-            if index == 0:
-                d = 0
-            else:
-                start_point = proj_points[index-1]
-                d = self._distance(start_point, end_point)
-            result.append(Distance(m=d))
-        return result
+        return gis.distance_array(self.proj_point_array())
 
     def densified_point_array(self, threshold):
         """Add points to the line such that the distance between any two points is < threshold"""
-        distances = self.distance_array()
-        proj_points = self.as_projected_point_array()
-        densified = []
+        return gis.densified_line(self.proj_point_array(), threshold)
 
-        def gen_new_point(start_point, dx, dy):
-            coords = (start_point.x + dx.m, start_point.y + dy.m)
-            pnt = geos.Point(coords)
-            densified.append(pnt)
-            return pnt
+    def densified_distance_array(self, threshold):
+        """Generate an array of distances between vertexes in a densified line"""
+        return gis.distance_array(gis.densified_line(self.proj_point_array(), threshold))
 
-        for index, end_point in enumerate(proj_points):
-            if index == 0: densified.append(end_point)
-            else:
-                if distances[index] > threshold: # Is distance from previous point > threshold?
-                    # Find the angle of the line between the two points
-                    start_point = proj_points[index-1]
-                    dx = end_point.x - start_point.x
-                    dy = end_point.y - start_point.y
-                    angle = math.atan(dy/dx)
+    def elevation_profile(self):
+        """
+        Generate an elevation profile: a list of tuples, first number is distance from start, second is elevation
+        
+        This takes a second or two. Should consider caching the result.
+        """
+        dem = Dem()
+        threshold = dem.pixel_distance
+        densified_line = self.densified_point_array(threshold)
+        densified_distances = self.densified_distance_array(threshold)
+        elevations = gis.elevations_along_line(densified_line, dem)
 
-                    # Calculate the dx/dy for points to be added along the line
-                    dx = threshold * math.cos(angle)
-                    dy = threshold * math.sin(angle)
+        def profile_point(index):
+            d = sum([ d.m for d in densified_distances[:index+1] ])
+            return (Distance(m=d), elevations[index])
 
-                    # Make a new point
-                    new_point = gen_new_point(start_point, dx, dy)
+        return [profile_point(i) for i in range(0,len(elevations))]
 
-                    # Continue making points until we are within the threshold of the end point
-                    while Distance(m=self._distance(new_point, end_point)) > threshold:
-                        new_point = gen_new_point(new_point, dx, dy)
-
-                # Have appended any required new points, slap in the end point
-                densified.append(end_point)
-
-        return densified
+    def profile_to_csv(self, csv_path):
+        """Write out the elevation profile to a csv file"""
+        import csv
+        with open(csv_path, "wb") as f:
+            writer = csv.writer(f)
+            writer.writerows([ (d[0].m, d[1].m) for d in self.elevation_profile() ])
 
     def elevation_losses(self):
         """Calculate the total elevation lost along the segment"""

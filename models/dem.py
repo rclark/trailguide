@@ -24,4 +24,4 @@ class Dem(object):
         xOffset = int((point.x - self.xOrigin) / self.pixelWidth)
         yOffset = int((point.y - self.yOrigin) / self.pixelHeight)
         data = self.band.ReadAsArray(xOffset, yOffset, 1, 1)
-        return data[0,0]
+        return Distance(m=data[0,0])
