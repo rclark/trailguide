@@ -1,12 +1,6 @@
 from django.contrib.gis.db import models
 from django.contrib.gis import admin
-
-class PointOfInterestType(models.Model):
-    """Category for points of interest."""
-    class Meta:
-        app_label = 'trailguide'
-    
-    name = models.CharField(max_length=255)
+from trailguide.models.constants import poi_types
 
 class PointOfInterest(models.Model):
     """Point features representing interesting places"""
@@ -14,7 +8,7 @@ class PointOfInterest(models.Model):
         app_label = 'trailguide'
     
     name = models.CharField(max_length=255)
-    type = models.ForeignKey(PointOfInterestType)
+    type = models.IntegerField(choices=poi_types)
     
     # Geospatial components of the model
     geo = models.PointField()

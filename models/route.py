@@ -68,8 +68,8 @@ class Route(models.Model):
         segments.
         """
         result = []
-        for segment in self.segments:
-            result.append([ poi for poi in segment.points_of_interest ])
+        for segment in self.segments.all():
+            result.append([ poi for poi in segment.points_of_interest.all() ])
         return result
     
     def notes(self):
