@@ -83,11 +83,28 @@ class Segment(models.Model):
 
     def elevation_losses(self):
         """Calculate the total elevation lost along the segment"""
-        pass
+        profile = self.elevation_profile()
+        losses = Distance()
+        for i, pnt in enumerate(profile):
+            if i > 0:
+                prev = profile[i-1]
+                dif = pnt[1] - prev[1]
+                if dif < Distance():
+                    losses += dif
+        return losses
+
 
     def elevation_gains(self):
         """Calculate the total elevation gained along the segment"""
-        pass
+        profile = self.elevation_profile()
+        gains = Distance()
+        for i, pnt in enumerate(profile):
+            if i > 0:
+                prev = profile[i-1]
+                dif = pnt[1] - prev[1]
+                if dif > Distance():
+                    gains += dif
+        return gains
 
     def add_adjacent_segments(self):
         """Link adjacent segments by geometry analysis"""

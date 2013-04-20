@@ -136,3 +136,6 @@ class SegmentTestCase(TestCase):
     
             self.assertEqual(self.sample_segment.densified_point_array(threshold), expected)
     '''
+
+    def test_elevation_losses(self):
+        self.assertIsInstance(self.sample_segment.elevation_losses(), Distance)
