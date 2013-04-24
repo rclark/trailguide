@@ -13,6 +13,25 @@ class PointOfInterest(models.Model):
     # Geospatial components of the model
     geo = models.PointField()
     objects = models.GeoManager()
+
+    def geojson(self):
+        gj = { "type": "Feature" }
+        gj["geometry"] = self.geo.geojson
+        props = {
+            "name": self.name,
+            "type": [ self.type, self.get_type_display() ],
+            "description": self.description
+        }
+        gj["properties"] = props
+                
+        return gj
+        
+        
+    @classmethod
+    def from_geojson(cls):
+        # poi = GEOSGeomtry('{ "type": "Point", "coordinates": [] }')
+        pass
+    
     
 class PointOfInterestAdmin(admin.OSMGeoAdmin):
     pass
