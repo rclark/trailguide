@@ -6,14 +6,15 @@ from trailguide.models.pointofinterest import PointOfInterest
 from trailguide.models.constants import trail_conditions, difficulties
 from trailguide.models.dem import Dem
 from trailguide.utils import gis
+from geographic_model import GeographicModel
 
-class Segment(models.Model):
+class Segment(models.Model, GeographicModel):
     """Line features representing a trail segment"""
     class Meta:
         app_label = 'trailguide'
 
-    proj_epsg = 3857
-    proj_srs = gdal.SpatialReference(proj_epsg)
+    #proj_epsg = 3857
+    #proj_srs = gdal.SpatialReference(proj_epsg)
 
     name = models.CharField(max_length=255, blank=True)
     condition = models.IntegerField(choices=trail_conditions)
@@ -25,12 +26,24 @@ class Segment(models.Model):
 
     # Geospatial components of the model
     geo = models.LineStringField(srid=4326)
-    objects = models.GeoManager()
+    #objects = models.GeoManager()
 
+    '''
     def geom_in_spherical_mercator(self):
         """Return the geometry of the object in spherical mercator projection"""
         transformed = self.geo.ogr.transform(self.proj_srs, clone=True)
         return geos.GEOSGeometry(transformed.wkt, self.proj_epsg)
+    '''
+
+    def serialize_properties(self):
+        """Serialize this object's properties"""
+        return {
+            'name': self.name,
+            'condition': self.get_condition_display(),
+            'notes': self.notes,
+            'date_created': self.date_created.isoformat(),
+            'date_updated': self.date_updated.isoformat()
+        }
 
     def length(self):
         """Calculate the length of the line segment"""

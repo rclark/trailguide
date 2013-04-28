@@ -1,8 +1,6 @@
 from django.db.models.loading import get_model
 from django.http import HttpResponseNotAllowed, HttpResponse, Http404
 from django.views.decorators.csrf import csrf_exempt
-from django.core.serializers import serialize, deserialize
-from django.core.serializers.base import DeserializationError
 import json
 
 # -------------------------------------------------------------------
@@ -24,11 +22,16 @@ def collection(request, model_name):
 #    Classes to manage the work of constructing the responses
 # -------------------------------------------------------------------
 class BaseController(object):
-    """A base class for controllers that respond to API requests"""
-    # Derivative classes should override to indicate what requests are acceptable
+    """
+    A base class for controllers that respond to API requests
+    """
+
+    # Derivative classes should override this to indicate what requests are acceptable
     allowed = ["GET", "PUT", "POST", "DELETE"]
     
     def __init__(self, request, model_name, pk=None):
+        """Read request parameters and come up with a matching set of model instances"""
+
         # Pass kwargs into instance object
         self.request = request
         self.model_name = model_name
@@ -54,15 +57,23 @@ class BaseController(object):
             return True
         
     def _serialize(self, queryset):
-        """Serialize a queryset as JSON"""
-        json_string = serialize("json", queryset)
+        """Serialize a queryset and return a GeoJSON string"""
+
+        # Each model should have a .serialize() method that returns a dict() that can be converted to JSON
+        serialized = [obj.serialize() for obj in queryset]
         
-        # If there is only one object, pull it out
+        # If there is only one object, pull it out of the array
         if queryset.count() == 1:
-            collection = json.loads(json_string)
-            json_string = json.dumps(collection[0])
-        
-        return json_string
+            serialized = serialized[0]
+        else:
+            # Wrap the array up in a GeoJSON FeatureCollection
+            serialized = {
+                "type": "FeatureCollection",
+                "features": serialized
+            }
+
+        # ensure_ascii=False means the output may contain UTF-8 encoded unicode characters
+        return json.dumps(serialized, ensure_ascii=False)
             
     def _filtered_set(self):
         """Inspect the request and generate a list of model instances that match"""
@@ -83,21 +94,14 @@ class BaseController(object):
         json_string = self._serialize(self.models)
         return HttpResponse(json_string, content_type="application/json")
     
-    def _validate_post_data(self):
-        """Validate that the POST data is correct and return a DeserializedObject, None if body is invalid"""
-        try:
-            for obj in  deserialize("json", self.request.body):
-                print(obj)
-        except DeserializationError as err:
-            return None
-        # Do any additional validation of the deserialized object before returning it
-        return obj
-    
     def _create_new_model(self):
         """Generate and return a new model instance based on the POST body"""
-        new_model = self._validate_post_data()
-        new_model.save()
-        return new_model
+        try:
+            new_model = self.model.deserialize()
+            new_model.save()
+            return new_model
+        except: # Models should throw an ValidationError if the POST body is invalid
+            return None
     
     def new_model(self):
         """Generate a new instance of the model and return an HttpResponse with the URL for it"""
@@ -108,7 +112,7 @@ class BaseController(object):
     
     def del_model(self):
         """Destroy an existing instance of the model and return the proper HTTP response"""
-        self.model.delete()
+        self.models.delete()
         response = HttpResponse(status=204)
         return response
     
@@ -135,7 +139,7 @@ class SingleController(BaseController):
     acceptable = ["GET", "PUT", "DELETE"]
     
     def __init__(self, request, model_name, pk):        
-        super(CollectionController, self).__init__(request, model_name, pk)        
+        super(SingleController, self).__init__(request, model_name, pk)
         if getattr(self, "http_response", None):
             return
         
