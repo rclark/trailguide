@@ -10,8 +10,11 @@ class views.TrailMap extends Backbone.View
 
   setupMap: () ->
     @map = map = new L.Map @el.id,
-      center: new L.LatLng 33.610044573695625, -111.50024414062501
-      zoom: 7
+      center: new L.LatLng 32.30280417394316, -110.85685729980469
+      zoom: 11
+      maxBounds: new L.LatLngBounds [[31.9592, -111.286], [32.9085, -110.1283]]
+      minZoom: 11
+      maxZoom: 15
 
     # This block will automatically add all layers to the map, which probably is not what we want
     addLayer = @addLayer
@@ -32,7 +35,16 @@ trailapp.trailMap = new views.TrailMap
   el: $ "#map"
   layers: [
       new app.models.MapboxLayer
-        code: "rclark.map-up7xciwe"
+        #code: "rclark.map-up7xciwe" # satellite layer
+        #code: "rclark.map-lgs3w52k" # terrain layer
+        code: "rclark.trails" # first-cut custom layer
+
+    ,
+      new app.models.MapboxLayer
+        code: "rclark.map-gbal2acz" # Roads and Rivers without background
+
+      #new app.models.StamenLayer
+        #mapName: "watercolor"
     ,
       new app.models.GeoJsonMapLayer
         data: new app.collections.SegmentCollection()

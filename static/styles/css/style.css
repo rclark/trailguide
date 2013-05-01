@@ -7937,8 +7937,8 @@ body {
   height: 100%;
 }
 #map {
-  height: -moz-calc(100% - 40px);
-  height: -webkit-calc(100% - 40px);
-  height: -o-calc(100% - 40px);
-  height: calc(100% - 40px);
+  height: -moz-calc(100% - 41px);
+  height: -webkit-calc(100% - 41px);
+  height: -o-calc(100% - 41px);
+  height: calc(100% - 41px);
 }

@@ -64,7 +64,7 @@ class models.GeoJsonMapLayer extends models.MapLayer
         thisLayerModel.trigger "dataFetch.error", response
 
 class models.MapboxLayer extends models.MapLayer
-  """Class that generates and L.TileLayer from MapBox"""
+  """Class that generates an L.TileLayer from MapBox"""
   createMapLayer: () ->
     code = @get "code"
     if not code?
@@ -72,5 +72,17 @@ class models.MapboxLayer extends models.MapLayer
       null
 
     layer = new L.TileLayer "http://a.tiles.mapbox.com/v3/#{code}/{z}/{x}/{y}.png"
+    @trigger "layerReady", layer
+    layer
+
+class models.StamenLayer extends models.MapLayer
+  """Class that generates a tile layer from Stamen Design"""
+  createMapLayer: () ->
+    mapName = @get "mapName"
+    if not mapName? or mapName not in [ "terrain", "watercolor", "toner" ]
+      console.log "Tried to create a Stamen Designs map without specifying an appropriate mapName"
+      null
+
+    layer = new L.StamenTileLayer mapName
     @trigger "layerReady", layer
     layer

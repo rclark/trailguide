@@ -225,7 +225,7 @@
 
     __extends(MapboxLayer, _super);
 
-    "Class that generates and L.TileLayer from MapBox";
+    "Class that generates an L.TileLayer from MapBox";
 
     function MapboxLayer() {
       return MapboxLayer.__super__.constructor.apply(this, arguments);
@@ -244,6 +244,32 @@
     };
 
     return MapboxLayer;
+
+  })(models.MapLayer);
+
+  models.StamenLayer = (function(_super) {
+
+    __extends(StamenLayer, _super);
+
+    "Class that generates a tile layer from Stamen Design";
+
+    function StamenLayer() {
+      return StamenLayer.__super__.constructor.apply(this, arguments);
+    }
+
+    StamenLayer.prototype.createMapLayer = function() {
+      var layer, mapName;
+      mapName = this.get("mapName");
+      if ((mapName == null) || (mapName !== "terrain" && mapName !== "watercolor" && mapName !== "toner")) {
+        console.log("Tried to create a Stamen Designs map without specifying an appropriate mapName");
+        null;
+      }
+      layer = new L.StamenTileLayer(mapName);
+      this.trigger("layerReady", layer);
+      return layer;
+    };
+
+    return StamenLayer;
 
   })(models.MapLayer);
 
@@ -275,8 +301,11 @@
     TrailMap.prototype.setupMap = function() {
       var addLayer, map;
       this.map = map = new L.Map(this.el.id, {
-        center: new L.LatLng(33.610044573695625, -111.50024414062501),
-        zoom: 7
+        center: new L.LatLng(32.30280417394316, -110.85685729980469),
+        zoom: 11,
+        maxBounds: new L.LatLngBounds([[31.9592, -111.286], [32.9085, -110.1283]]),
+        minZoom: 11,
+        maxZoom: 15
       });
       addLayer = this.addLayer;
       return _.each(this.layers, function(layerModel) {
@@ -306,7 +335,9 @@
     el: $("#map"),
     layers: [
       new app.models.MapboxLayer({
-        code: "rclark.map-up7xciwe"
+        code: "rclark.trails"
+      }), new app.models.MapboxLayer({
+        code: "rclark.map-gbal2acz"
       }), new app.models.GeoJsonMapLayer({
         data: new app.collections.SegmentCollection()
       })
