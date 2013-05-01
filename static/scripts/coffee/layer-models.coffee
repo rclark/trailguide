@@ -8,12 +8,17 @@ class models.MapLayer extends Backbone.Model
   """Base class for any map layers"""
   defaults: # These are the things you should probably pass in as options when creating a new one
     name: "Layer's Name"
-    url: "http://where-do-i-get-data.com"
+    isLayerReady: false
     visible: false
     selectable: false
 
   initialize: (options) ->
     @options = options
+
+    thisLayerModel = @
+    @on "layerReady", () ->
+      thisLayerModel.set "isLayerReady", true
+
     @set "mapLayer", @createMapLayer()
 
   createMapLayer: () ->
@@ -27,19 +32,15 @@ class models.MapLayer extends Backbone.Model
 
 class models.GeoJsonMapLayer extends models.MapLayer
   """Class that generates an L.GeoJSON layer from data via JSON request"""
-  initialize: (options) ->
-    @set "data", options.data or new collections.GeoDataCollection()
-    models.MapLayer.prototype.initialize.call @, options
-
   createMapLayer: () ->
     """
     This function needs to end up setting the model's "mapLayer" attribute, and triggering the "layerReady" event. Since
     the call for GeoJSON via collection.fetch is asynchronous, we listen for custom events.
     """
     @on "dataFetch.success", (dataCollection) ->
-      l = new L.GeoJSON dataCollection.toGeoJSON()
-      @set "mapLayer", l
-      @trigger "layerReady", l
+      layer = new L.GeoJSON dataCollection.toGeoJSON()
+      @set "mapLayer", layer
+      @trigger "layerReady", layer
 
     @on "dataFetch.error", (response) ->
       console.log response
@@ -52,8 +53,24 @@ class models.GeoJsonMapLayer extends models.MapLayer
     """
     thisLayerModel = @
     collection = @get "data"
+    if not collection?
+      @trigger "dataFetch.error", "No GeoDataCollection was given to this GeoJsonMapLayer"
+      null
+
     collection.fetch
       success: (collection, response, options) ->
         thisLayerModel.trigger "dataFetch.success", collection
       error: (collection, response, options) ->
         thisLayerModel.trigger "dataFetch.error", response
+
+class models.MapboxLayer extends models.MapLayer
+  """Class that generates and L.TileLayer from MapBox"""
+  createMapLayer: () ->
+    code = @get "code"
+    if not code?
+      console.log "Tried to create a MapBox layer without specifying its ID"
+      null
+
+    layer = new L.TileLayer "http://a.tiles.mapbox.com/v3/#{code}/{z}/{x}/{y}.png"
+    @trigger "layerReady", layer
+    layer

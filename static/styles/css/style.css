@@ -7933,7 +7933,12 @@ a.badge:focus {
   margin: 80px 0;
 }
 html,
-body,
-#map {
+body {
   height: 100%;
+}
+#map {
+  height: -moz-calc(100% - 40px);
+  height: -webkit-calc(100% - 40px);
+  height: -o-calc(100% - 40px);
+  height: calc(100% - 40px);
 }

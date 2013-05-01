@@ -5,13 +5,22 @@ views = app.views ? app.views = {}
 
 class views.TrailMap extends Backbone.View
   initialize: (options) ->
+    @layers = options.layers or []
     @setupMap()
 
   setupMap: () ->
-    @map = new L.Map @el.id,
+    @map = map = new L.Map @el.id,
       center: new L.LatLng 33.610044573695625, -111.50024414062501
       zoom: 7
-      layers: new L.TileLayer "http://a.tiles.mapbox.com/v3/rclark.map-up7xciwe/{z}/{x}/{y}.png"
+
+    # This block will automatically add all layers to the map, which probably is not what we want
+    addLayer = @addLayer
+    _.each @layers, (layerModel) ->
+      if layerModel.get "isLayerReady"
+        map.addLayer layerModel.get "mapLayer"
+      else
+        layerModel.on "layerReady", (layer) ->
+          map.addLayer layer
 
   addLayer: (layerModel) ->
     @map.addLayer layerModel.get "mapLayer"
@@ -21,3 +30,10 @@ class views.TrailMap extends Backbone.View
 
 trailapp.trailMap = new views.TrailMap
   el: $ "#map"
+  layers: [
+      new app.models.MapboxLayer
+        code: "rclark.map-up7xciwe"
+    ,
+      new app.models.GeoJsonMapLayer
+        data: new app.collections.SegmentCollection()
+  ]

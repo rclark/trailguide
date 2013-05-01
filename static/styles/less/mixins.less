@@ -1,0 +1,8 @@
+// Set the height of an element to the full page minus some buffer
+.fullHeightMinus(@buffer) {
+  @pixelBuffer: @buffer + 0px;
+  height: -moz-calc(~"100% - @{pixelBuffer}");
+  height: -webkit-calc(~"100% - @{pixelBuffer}");
+  height: -o-calc(~"100% - @{pixelBuffer}");
+  height: calc(~"100% - @{pixelBuffer}");
+}

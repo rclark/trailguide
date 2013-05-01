@@ -149,13 +149,18 @@
 
     MapLayer.prototype.defaults = {
       name: "Layer's Name",
-      url: "http://where-do-i-get-data.com",
+      isLayerReady: false,
       visible: false,
       selectable: false
     };
 
     MapLayer.prototype.initialize = function(options) {
+      var thisLayerModel;
       this.options = options;
+      thisLayerModel = this;
+      this.on("layerReady", function() {
+        return thisLayerModel.set("isLayerReady", true);
+      });
       return this.set("mapLayer", this.createMapLayer());
     };
 
@@ -180,17 +185,12 @@
       return GeoJsonMapLayer.__super__.constructor.apply(this, arguments);
     }
 
-    GeoJsonMapLayer.prototype.initialize = function(options) {
-      this.set("data", options.data || new collections.GeoDataCollection());
-      return models.MapLayer.prototype.initialize.call(this, options);
-    };
-
     GeoJsonMapLayer.prototype.createMapLayer = function() {
       "This function needs to end up setting the model's \"mapLayer\" attribute, and triggering the \"layerReady\" event. Since\nthe call for GeoJSON via collection.fetch is asynchronous, we listen for custom events.";      this.on("dataFetch.success", function(dataCollection) {
-        var l;
-        l = new L.GeoJSON(dataCollection.toGeoJSON());
-        this.set("mapLayer", l);
-        return this.trigger("layerReady", l);
+        var layer;
+        layer = new L.GeoJSON(dataCollection.toGeoJSON());
+        this.set("mapLayer", layer);
+        return this.trigger("layerReady", layer);
       });
       this.on("dataFetch.error", function(response) {
         return console.log(response);
@@ -203,6 +203,10 @@
       var collection, thisLayerModel;
       thisLayerModel = this;
       collection = this.get("data");
+      if (collection == null) {
+        this.trigger("dataFetch.error", "No GeoDataCollection was given to this GeoJsonMapLayer");
+        null;
+      }
       return collection.fetch({
         success: function(collection, response, options) {
           return thisLayerModel.trigger("dataFetch.success", collection);
@@ -214,6 +218,32 @@
     };
 
     return GeoJsonMapLayer;
+
+  })(models.MapLayer);
+
+  models.MapboxLayer = (function(_super) {
+
+    __extends(MapboxLayer, _super);
+
+    "Class that generates and L.TileLayer from MapBox";
+
+    function MapboxLayer() {
+      return MapboxLayer.__super__.constructor.apply(this, arguments);
+    }
+
+    MapboxLayer.prototype.createMapLayer = function() {
+      var code, layer;
+      code = this.get("code");
+      if (code == null) {
+        console.log("Tried to create a MapBox layer without specifying its ID");
+        null;
+      }
+      layer = new L.TileLayer("http://a.tiles.mapbox.com/v3/" + code + "/{z}/{x}/{y}.png");
+      this.trigger("layerReady", layer);
+      return layer;
+    };
+
+    return MapboxLayer;
 
   })(models.MapLayer);
 
@@ -238,14 +268,25 @@
     }
 
     TrailMap.prototype.initialize = function(options) {
+      this.layers = options.layers || [];
       return this.setupMap();
     };
 
     TrailMap.prototype.setupMap = function() {
-      return this.map = new L.Map(this.el.id, {
+      var addLayer, map;
+      this.map = map = new L.Map(this.el.id, {
         center: new L.LatLng(33.610044573695625, -111.50024414062501),
-        zoom: 7,
-        layers: new L.TileLayer("http://a.tiles.mapbox.com/v3/rclark.map-up7xciwe/{z}/{x}/{y}.png")
+        zoom: 7
+      });
+      addLayer = this.addLayer;
+      return _.each(this.layers, function(layerModel) {
+        if (layerModel.get("isLayerReady")) {
+          return map.addLayer(layerModel.get("mapLayer"));
+        } else {
+          return layerModel.on("layerReady", function(layer) {
+            return map.addLayer(layer);
+          });
+        }
       });
     };
 
@@ -262,7 +303,14 @@
   })(Backbone.View);
 
   trailapp.trailMap = new views.TrailMap({
-    el: $("#map")
+    el: $("#map"),
+    layers: [
+      new app.models.MapboxLayer({
+        code: "rclark.map-up7xciwe"
+      }), new app.models.GeoJsonMapLayer({
+        data: new app.collections.SegmentCollection()
+      })
+    ]
   });
 
 }).call(this);
