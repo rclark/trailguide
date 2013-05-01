@@ -1,4 +1,5 @@
 from trailguide.utils import HttpResponseNotImplemented
+from django.shortcuts import render
 
 def map_page(request):
-    return HttpResponseNotImplemented()
+    return render(request, "trailguide/map.html")

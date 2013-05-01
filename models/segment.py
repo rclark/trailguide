@@ -13,9 +13,6 @@ class Segment(models.Model, GeographicModel):
     class Meta:
         app_label = 'trailguide'
 
-    #proj_epsg = 3857
-    #proj_srs = gdal.SpatialReference(proj_epsg)
-
     name = models.CharField(max_length=255, blank=True)
     condition = models.IntegerField(choices=trail_conditions)
     notes = models.TextField(blank=True)
@@ -26,14 +23,6 @@ class Segment(models.Model, GeographicModel):
 
     # Geospatial components of the model
     geo = models.LineStringField(srid=4326)
-    #objects = models.GeoManager()
-
-    '''
-    def geom_in_spherical_mercator(self):
-        """Return the geometry of the object in spherical mercator projection"""
-        transformed = self.geo.ogr.transform(self.proj_srs, clone=True)
-        return geos.GEOSGeometry(transformed.wkt, self.proj_epsg)
-    '''
 
     def serialize_properties(self):
         """Serialize this object's properties"""
@@ -44,6 +33,10 @@ class Segment(models.Model, GeographicModel):
             'date_created': self.date_created.isoformat(),
             'date_updated': self.date_updated.isoformat()
         }
+
+    @classmethod
+    def deserialize_properties(cls, properties_obj):
+        return {}
 
     def length(self):
         """Calculate the length of the line segment"""

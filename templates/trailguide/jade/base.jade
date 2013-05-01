@@ -3,6 +3,7 @@ html
     head
         title {{ site_title }}
         link(rel="stylesheet", type="text/css", href="/static/styles/css/style.css")
+        script(src="/static/vendor/jquery-1.9.1.js")
         {% block scripts %}        
         {% endblock %}
     body
@@ -23,6 +24,8 @@ html
                             input(type="search", placeholder="Find a Trail").search-query
                             button(type="submit").btn Search
         {% block content %}
+        {% endblock %}
+        {% block bodyScripts %}
         {% endblock %}
         .container
             footer

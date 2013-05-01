@@ -34,7 +34,7 @@ class BaseController(object):
 
         # Pass kwargs into instance object
         self.request = request
-        self.model_name = model_name
+        self.model_name = model_name.lower()
         self.model = get_model('trailguide', model_name)
         self.pk = pk
         
@@ -61,7 +61,15 @@ class BaseController(object):
 
         # Each model should have a .serialize() method that returns a dict() that can be converted to JSON
         serialized = [obj.serialize() for obj in queryset]
-        
+
+        # Replace {domain} in URIs with the HOST for this request
+        def setDomain(serializedObj):
+            serializedObj["id"] = serializedObj\
+                .get("id", "")\
+                .replace("{domain}", self.request.META["HTTP_HOST"].lower())\
+                .replace("{model_name}", self.model_name)
+        [setDomain(obj) for obj in serialized]
+
         # If there is only one object, pull it out of the array
         if queryset.count() == 1:
             serialized = serialized[0]

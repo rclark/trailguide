@@ -1,3 +1,4 @@
+@import "../../vendor/leaflet-0.5.1/leaflet.css";
 /*!
  * Bootstrap v2.3.1
  *
@@ -7930,4 +7931,9 @@ a.badge:focus {
 }
 .featurette-divider {
   margin: 80px 0;
+}
+html,
+body,
+#map {
+  height: 100%;
 }

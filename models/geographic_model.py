@@ -45,11 +45,15 @@ class GeographicModel():
 
     def serialize(self):
         """Serialize the object as GeoJSON"""
+        properties = self.serialize_properties()
+        if "pk" not in properties.keys():
+            properties["pk"] = self.pk
+
         return {
             "type": "Feature",
             "id": self.uri(),
             "geometry": json.loads(self.geo.geojson),
-            "properties": self.serialize_properties()
+            "properties": properties
         }
 
     def serialize_properties(self):
@@ -57,6 +61,6 @@ class GeographicModel():
         return {}
 
     def uri(self):
-        """Define the object's URI. Child classes should override this function"""
-        return "http://{domain}/api/{model_name}/%s/" + str(self.pk)
+        """Define the object's URI."""
+        return "http://{domain}/api/{model_name}/%s/" % str(self.pk)
 

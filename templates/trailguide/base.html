@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>{{ site_title }}</title>
-    <link rel="stylesheet" type="text/css" href="/static/styles/css/style.css">{% block scripts %}        
+    <link rel="stylesheet" type="text/css" href="/static/styles/css/style.css">
+    <script src="/static/vendor/jquery-1.9.1.js"></script>{% block scripts %}        
     {% endblock %}
   </head>
   <body>
@@ -24,6 +25,8 @@
         </div>
       </div>
     </div>{% block content %}
+    {% endblock %}
+    {% block bodyScripts %}
     {% endblock %}
     <div class="container">
       <footer>
