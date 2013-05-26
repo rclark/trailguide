@@ -16,20 +16,38 @@
 
     __extends(GeoDataModel, _super);
 
-    "This is a base class for GeoJSON data pulled from Trailguide API";
-
     function GeoDataModel() {
       return GeoDataModel.__super__.constructor.apply(this, arguments);
     }
 
+    /*This is a base class for GeoJSON data pulled from Trailguide API
+    */
+
+
     GeoDataModel.prototype.modelName = "Trail Data";
 
-    "Proper REST-ful architecture would have us maintain the GeoJSON \"id\" attribute as the URI for the resource -- in our\ncase, that would be the URL that we access it on via API call. But this will confuse Backbone, as the entire URI\nwould be appended to the urlRoot resulting in invalid API calls. Instead, the GeoJSON objects returned via API will\ninclude a \"pk\" property, which Backbone will treat as the ID.";
+    /*
+    Proper REST-ful architecture would have us maintain the GeoJSON "id" attribute as the URI for the resource -- in our
+    case, that would be the URL that we access it on via API call. But this will confuse Backbone, as the entire URI
+    would be appended to the urlRoot resulting in invalid API calls. Instead, the GeoJSON objects returned via API will
+    include a "pk" property, which Backbone will treat as the ID.
+    */
+
 
     GeoDataModel.prototype.idAttribute = "pk";
 
     GeoDataModel.prototype.parse = function(response, options) {
-      "From Backbone.js docs:\n\"parse is called whenever a model's data is returned by the server, in fetch, and save. The function is passed the\nraw response object, and should return the attributes hash to be set on the model.\"\n\nGeoJSON puts attributes in a 'properties' object, so we need to pull that out here for fetch to work as we expect\n\n@response: GeoJSON object retrieved by a fetch or save\n@options: unknown...";
+      /*
+      From Backbone.js docs:
+      "parse is called whenever a model's data is returned by the server, in fetch, and save. The function is passed the
+      raw response object, and should return the attributes hash to be set on the model."
+      
+      GeoJSON puts attributes in a 'properties' object, so we need to pull that out here for fetch to work as we expect
+      
+      @response: GeoJSON object retrieved by a fetch or save
+      @options: unknown...
+      */
+
       var geometry, properties;
       properties = response.properties || {};
       geometry = response.geometry || {};
@@ -39,7 +57,13 @@
     };
 
     GeoDataModel.prototype.toJSON = function() {
-      "From Backbone.js docs:\n\"Return a copy of the model's attributes for JSON stringification.\"\n\nPut the attributes hash in the right place to create a valid GeoJSON object";
+      /*
+      From Backbone.js docs:
+      "Return a copy of the model's attributes for JSON stringification."
+      
+      Put the attributes hash in the right place to create a valid GeoJSON object
+      */
+
       var geojson;
       return geojson = {
         type: "Feature",
@@ -57,24 +81,42 @@
 
     __extends(GeoDataCollection, _super);
 
-    "A base class for GeoJSON data collections from the Trailguide API";
-
     function GeoDataCollection() {
       return GeoDataCollection.__super__.constructor.apply(this, arguments);
     }
 
+    /*A base class for GeoJSON data collections from the Trailguide API
+    */
+
+
     GeoDataCollection.prototype.model = models.GeoDataModel;
 
     GeoDataCollection.prototype.url = function() {
-      "Generate the URL for the API calls to this data set";      return "/api/" + this.model.prototype.modelName;
+      /*Generate the URL for the API calls to this data set
+      */
+      return "/api/" + this.model.prototype.modelName;
     };
 
     GeoDataCollection.prototype.parse = function(response, options) {
-      "From Backbone docs:\n\"parse is called by Backbone whenever a collection's models are returned by the server, in fetch. The function is\npassed the raw response object, and should return the array of model attributes to be added to the collection.\"\n\nWe will get back a GeoJSON FeatureCollection, and need to pull our the individual GeoJSON objects in order to create\nmodels\n\n@response: This will be a GeoJSON object returned by the Trailguide API\n@options: unknown";      return response.features || [];
+      /*
+      From Backbone docs:
+      "parse is called by Backbone whenever a collection's models are returned by the server, in fetch. The function is
+      passed the raw response object, and should return the array of model attributes to be added to the collection."
+      
+      We will get back a GeoJSON FeatureCollection, and need to pull our the individual GeoJSON objects in order to create
+      models
+      
+      @response: This will be a GeoJSON object returned by the Trailguide API
+      @options: unknown
+      */
+      return response.features || [];
     };
 
     GeoDataCollection.prototype.toGeoJSON = function() {
-      "Create a GeoJSON FeatureCollection from the data in this model. Useful for generating map layers";
+      /*
+      Create a GeoJSON FeatureCollection from the data in this model. Useful for generating map layers
+      */
+
       var featureCollection, m;
       return featureCollection = {
         type: "FeatureCollection",
@@ -141,11 +183,13 @@
 
     __extends(MapLayer, _super);
 
-    "Base class for any map layers";
-
     function MapLayer() {
       return MapLayer.__super__.constructor.apply(this, arguments);
     }
+
+    /*Base class for any map layers
+    */
+
 
     MapLayer.prototype.defaults = {
       name: "Layer's Name",
@@ -165,7 +209,12 @@
     };
 
     MapLayer.prototype.createMapLayer = function() {
-      "This function should be overridden by child models and should produce an object that can be added to the map. There\nis some conflation of data and portrayal here, since the object produced will depend on the type of map that we're\nadding the thing to. We're pretty wedded to Leaflet though, so we might be able to get away with this";
+      /*
+      This function should be overridden by child models and should produce an object that can be added to the map. There
+      is some conflation of data and portrayal here, since the object produced will depend on the type of map that we're
+      adding the thing to. We're pretty wedded to Leaflet though, so we might be able to get away with this
+      */
+
       var l;
       l = {};
       return this.trigger("layerReady", l);
@@ -179,14 +228,20 @@
 
     __extends(GeoJsonMapLayer, _super);
 
-    "Class that generates an L.GeoJSON layer from data via JSON request";
-
     function GeoJsonMapLayer() {
       return GeoJsonMapLayer.__super__.constructor.apply(this, arguments);
     }
 
+    /*Class that generates an L.GeoJSON layer from data via JSON request
+    */
+
+
     GeoJsonMapLayer.prototype.createMapLayer = function() {
-      "This function needs to end up setting the model's \"mapLayer\" attribute, and triggering the \"layerReady\" event. Since\nthe call for GeoJSON via collection.fetch is asynchronous, we listen for custom events.";      this.on("dataFetch.success", function(dataCollection) {
+      /*
+      This function needs to end up setting the model's "mapLayer" attribute, and triggering the "layerReady" event. Since
+      the call for GeoJSON via collection.fetch is asynchronous, we listen for custom events.
+      */
+      this.on("dataFetch.success", function(dataCollection) {
         var layer;
         layer = new L.GeoJSON(dataCollection.toGeoJSON());
         this.set("mapLayer", layer);
@@ -199,7 +254,10 @@
     };
 
     GeoJsonMapLayer.prototype.getData = function() {
-      "Get data from the server through the embedded Backbone.Collection.fetch(). Fire events upon asynchronous completion.";
+      /*
+      Get data from the server through the embedded Backbone.Collection.fetch(). Fire events upon asynchronous completion.
+      */
+
       var collection, thisLayerModel;
       thisLayerModel = this;
       collection = this.get("data");
@@ -225,11 +283,13 @@
 
     __extends(MapboxLayer, _super);
 
-    "Class that generates an L.TileLayer from MapBox";
-
     function MapboxLayer() {
       return MapboxLayer.__super__.constructor.apply(this, arguments);
     }
+
+    /*Class that generates an L.TileLayer from MapBox
+    */
+
 
     MapboxLayer.prototype.createMapLayer = function() {
       var code, layer;
@@ -251,11 +311,13 @@
 
     __extends(StamenLayer, _super);
 
-    "Class that generates a tile layer from Stamen Design";
-
     function StamenLayer() {
       return StamenLayer.__super__.constructor.apply(this, arguments);
     }
+
+    /*Class that generates a tile layer from Stamen Design
+    */
+
 
     StamenLayer.prototype.createMapLayer = function() {
       var layer, mapName;
