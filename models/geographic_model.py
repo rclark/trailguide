@@ -1,5 +1,6 @@
 from django.contrib.gis.db import models
 from django.contrib.gis import geos, gdal
+from django.contrib.gis.geos import Polygon
 import json
 
 class GeographicModel():
@@ -8,7 +9,6 @@ class GeographicModel():
 
     proj_epsg = 3857
     proj_srs = gdal.SpatialReference(proj_epsg)
-    objects = models.GeoManager()
 
     # This field should overriden in child classes
     geo = models.GeometryField(srid=4326)
@@ -17,6 +17,22 @@ class GeographicModel():
         """Return the geometry of the object in spherical mercator projection"""
         transformed = self.geo.ogr.transform(self.proj_srs, clone=True)
         return geos.GEOSGeometry(transformed.wkt, self.proj_epsg)
+
+    @classmethod
+    def filtered_set(cls, query_dict):
+        # Find keys in the query that are also fields in the model
+        query_keys = [key.lower() for key in query_dict.keys() if key.lower() in cls._meta.get_all_field_names()]
+
+        query_params = {}
+        for key in query_keys:
+            query_params[key] = query_dict[key]
+
+        # Also allow for a bbox parameter
+        if "bbox" in query_dict.keys():
+            box = Polygon.from_bbox([float(coord) for coord in query_dict["bbox"].split(",")])
+            query_params["geo__intersects"] = box
+
+        return cls.objects.filter(**query_params)
 
     @classmethod
     def deserialize(cls, geojson_str):
@@ -41,7 +57,14 @@ class GeographicModel():
     @classmethod
     def deserialize_properties(cls, properties_obj):
         """Return kwargs capable of creating an instance with these properties. Should be overridden by child classes"""
-        return {}
+        valid_keys = [key for key in properties_obj.keys() if key in cls._meta.get_all_field_names()]
+
+        kwargs = {}
+        for key in valid_keys:
+            kwargs[key] = properties_obj[key]
+
+        return kwargs
+
 
     def serialize(self):
         """Serialize the object as GeoJSON"""

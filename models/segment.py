@@ -23,6 +23,7 @@ class Segment(models.Model, GeographicModel):
 
     # Geospatial components of the model
     geo = models.LineStringField(srid=4326)
+    objects = models.GeoManager()
 
     def serialize_properties(self):
         """Serialize this object's properties"""

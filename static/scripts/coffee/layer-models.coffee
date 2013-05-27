@@ -29,6 +29,7 @@ class models.MapLayer extends Backbone.Model
     ###
     l = {}
     @trigger "layerReady", l
+    l
 
 class models.GeoJsonMapLayer extends models.MapLayer
   ###Class that generates an L.GeoJSON layer from data via JSON request###

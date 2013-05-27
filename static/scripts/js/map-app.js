@@ -217,7 +217,8 @@
 
       var l;
       l = {};
-      return this.trigger("layerReady", l);
+      this.trigger("layerReady", l);
+      return l;
     };
 
     return MapLayer;

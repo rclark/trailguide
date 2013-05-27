@@ -1,6 +1,7 @@
 from django.db.models.loading import get_model
 from django.http import HttpResponseNotAllowed, HttpResponse, Http404
 from django.views.decorators.csrf import csrf_exempt
+
 import json
 
 # -------------------------------------------------------------------
@@ -90,12 +91,7 @@ class BaseController(object):
             return self.model.objects.filter(pk=self.pk)
         
         # Otherwise, use URL query parameters to filter
-        # Find keys in the query that are also fields in the model
-        query_keys = [ key for key in self.request.GET.keys() if key in self.model._meta.get_all_field_names() ]
-        query_params = {}
-        for key in query_keys:
-            query_params[key] = self.request.GET[key]
-        return self.model.objects.filter(**query_params)
+        return self.model.filtered_set(self.request.GET)
         
     def view_models(self):
         """Serialize the filtered set of models and return them as an HttpResponse"""
